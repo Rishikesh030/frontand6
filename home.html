@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel='stylesheet'
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin='anonymous'
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+<section class="newsletter">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="content">
+            <h2>SUBSCRIBE TO OUR WEBPAGE</h2>
+        <div class="input-group">
+             <input type="email" class="form-control" placeholder="Enter your email">
+             <span class="input-group-btn">
+             <button class="btn" type="submit">Subscribe Now</button>
+             </span>
+              </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Home page</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- first slider -->
+      <div class="container-fluid mt-5 p-1 " >
+        <div class="row mt-3">
+          <div class="col-lg-12" >
+            <div
+              id="carouselWithCaptions"
+              class="carousel slide pointer-event"
+              data-bs-ride="carousel"
+            >
+              <ol class="carousel-indicators indicator">
+                <li
+                  data-bs-target="#carouselWithCaptions"
+                  data-bs-slide-to="0"
+                  class=""
+                ></li>
+                <li
+                  data-bs-target="#carouselWithCaptions"
+                  data-bs-slide-to="1"
+                  class=""
+                ></li>
+                <li
+                  data-bs-target="#carouselWithCaptions"
+                  data-bs-slide-to="2"
+                  class="active"
+                  aria-current="true"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img
+                    src="../frontand6/images/slider1.jpg"
+                    class="d-block w-100 image mainsliders" 
+                    alt="Slide 1"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../frontand6/images/slider2.jpg"
+                    class="d-block w-100 mainsliders"
+                    alt="Slide 2"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <img
+                    src="../frontand6/images/slider3.jpg"
+                    class="d-block w-100 mainsliders"
+                    alt="Slide 3"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselWithCaptions"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselWithCaptions"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- first slider -->
+      <!-- Page Content -->
+      <section class="py-5 text-center">
+            <div class="container"> 
+              <h2 class="text-center">Services</h2>
+              <p class="text-muted mb-5 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 mb-3">
+                  <img src="../frontand6/images/icon.png" height="100" alt="">
+                  <h6>Ex cupidatat eu</h6>
+                  <p class="text-muted">Ex cupidatat eu officia consequat incididunt labore occaecat ut veniam labore et cillum id et.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                 <img src="../frontand6/images/icon7.png" height="100" alt="">
+                    <use xlink:href="#lnr-heart"></use>
+                  </svg>
+                  <h6>Tempor aute occaecat</h6>
+                  <p class="text-muted">Tempor aute occaecat pariatur esse aute amet.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                <img src="../frontand6/images/icon6.png"   height="100" alt="">
+                    <use xlink:href="#lnr-rocket"></use>
+                  </svg>
+                  <h6>Voluptate ex irure</h6>
+                  <p class="text-muted">Voluptate ex irure ipsum ipsum ullamco ipsum reprehenderit non ut mollit commodo.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                 <img src="../frontand6/images/icon5.png"  height="100" alt="">
+                    <use xlink:href="#lnr-paperclip"></use>
+                  </svg>
+                  <h6>Tempor commodo</h6>
+                  <p class="text-muted">Tempor commodo nostrud ex Lorem occaecat duis occaecat minim.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                 <img src="../frontand6/images/icon4.png"   height="100" alt="">
+                    <use xlink:href="#lnr-screen"></use>
+                  </svg>
+                  <h6>Et fugiat sint occaecat</h6>
+                  <p class="text-muted">Et fugiat sint occaecat voluptate incididunt anim nostrud ea cillum cillum consequat.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                <img src="../frontand6/images/icon3.png"  height="100"  alt="">
+                    <use xlink:href="#lnr-inbox"></use>
+                  </svg>
+                  <h6>Et labore tempor et</h6>
+                  <p class="text-muted">Et labore tempor et adipisicing dolor.</p>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section class="main">
+      <div class="container mt-4">
+          <h1 class="text-center mb-4 p-4 text-secondary">The Blog is coding content</h1>
+            <div class="row">
+      
+         <div class="card-columns">
+        <div class="card shadow border-0">
+          <img class="card-img-top" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?cs=srgb&dl=pexels-designecologist-1779487.jpg&fm=jpg alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Computer code </h5>
+            <p class="card-text">ind Online Coding Course Now. Check Out Essential Info on Faqtoids.com. Smart Search. Results Now. All Your Questions. Find It Here. You Ask, We Answer. All The Info You Need. Browse It Here. Millions Search Results. Web Search Info. Online Searches. Services: Web Searches, Web Results, Related Searches, Shopping Results</p>
+          </div>
+        </div>
+        <div class="card shadow border-0  p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card shadow border-0">
+          <img class="card-img-top" src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?cs=srgb&dl=pexels-jorge-jesus-614117.jpg&fm=jpg " alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coding information</h5>
+            <p class="card-text">Coding is a list of step-by-step instructions that get computers to do what you want them to do. Coding makes it possible for us to create computer software, games, apps and websites. Coders, or programmers, are people who write the programmes behind everything we see and do on a computer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card shadow border-0 bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+            <footer class="blockquote-footer">
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card shadow border-0 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card shadow border-0">
+          <img class="card-img" src="https://images.pexels.com/photos/12495614/pexels-photo-12495614.jpeg?cs=srgb&dl=pexels-syed-qaarif-andrabi-124.jpg&fm=jpg" alt="Card image">
+        </div>
+        <div class="card shadow border-0 p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      </div>
+         </div>
+         </section>
+         
+         <!-- Header -->
+      <header class="bg-primary text-center py-5 mb-4">
+        <div class="container">
+          <h1 class="font-weight-light text-white">Meet the Team</h1>
+        </div>
+      </header>
+      
+      <!-- Page Content -->
+      <div class="container">
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://images.pexels.com/photos/9071737/pexels-photo-9071737.jpeg?cs=srgb&dl=pexels-yan-krukov-9071737.jpg&fm=jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">karan ded</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://images.pexels.com/photos/7848986/pexels-photo-7848986.jpeg?cs=srgb&dl=pexels-ron-lach-7848986.jpg&fm=jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">param hery</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://images.pexels.com/photos/9553909/pexels-photo-9553909.jpeg?cs=srgb&dl=pexels-mikhail-fesenko-9553909.jpg&fm=jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">milan micky</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://images.pexels.com/photos/5952738/pexels-photo-5952738.jpeg?cs=srgb&dl=pexels-mati-mango-5952738.jpg&fm=jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">rishi nick </h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      
+      </div>
+      
+      <div class="container">
+          <div class="row">
+               <div class="col-md-8">
+              <blockquote class="blockquote text-center mb-0">
+                <svg class="lnr text-muted quote-icon pull-left">
+                  <use xlink:href="#lnr-heart">                                       
+                </use></svg>
+                <p class="mb-0">Keep in touch with me for more Theme  right here!</p><br>
+                <footer class="blockquote-footer">HTML Designing</footer>
+                  <cite title="Source Title">@rishikesh pandya</cite>
+              </blockquote>
+              </div>
+              <div class="col-md-4">
+              <a class="flot-right btn btn-white border-0 rounded shadow post-pager-link p-0 next ml-4" href="">
+                     <span class="d-flex h-100">
+                    <span class="p-3 d-flex flex-column justify-content-center w-100">
+                  <div class="indicator mb-1 text-uppercase text-muted">webublog<i class="fa fa-bars ml-2"></i></div>
+                       <p class="f-13">See next awesome themes</p>
+                           </span>
+                     <span class="bg-primary p-2 d-flex align-items-center text-white">
+                     <i class="fa fa-arrow-circle-right"></i>
+                </span>
+               </span>
+      </a></div>
+              </div>
+              
+            </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/266b76cb57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        body {
+
+margin: 0;
+
+padding: 0;
+
+min-height: 100vh;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;  
+
+font-family: sans-serif;
+
+background-color: #f1f1f1; 
+
+}
+
+.container .card .icon {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+background: #2c73df;
+
+}
+
+.container .card .icon .fa {
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+font-size: 80px;
+
+color: #fff;
+
+}
+
+.container .card .slide {
+
+width: 300px;
+
+height: 200px;
+
+transition: 0.5s;
+
+}
+
+.container .card .slide.slide1 {
+
+position: relative;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+z-index: 1;
+
+transition: .7s;
+
+transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+
+transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+position: relative;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+padding: 20px;
+
+box-sizing: border-box;
+
+transition: .8s;
+
+transform: translateY(-100px);
+
+box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+.container .card:hover .slide.slide2{
+
+transform: translateY(0);
+
+}
+
+.container .card .slide.slide2::after{
+
+content: "";
+
+position: absolute;
+
+width: 30px;
+
+height: 4px;
+
+bottom: 15px;
+
+left: 50%;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+background: #2c73df;
+
+}
+
+.container .card .slide.slide2 .content p {
+
+margin: 0;
+
+padding: 0;
+
+text-align: center;
+
+color: #414141;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+margin: 0 0 10px 0;
+
+padding: 0;
+
+font-size: 24px;
+
+text-align: center;
+
+color: #414141;
+
+} 
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header mt-4">
+                        <h1>merrage card</h1>
+                    </div>
+                    
+                    <div class="card-body d-flex">
+                   
+    <div class="container ">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Hello there!
+
+                    </h3>
+
+                    <p>Trust yourself and keep going.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    <div class="container ">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Hello there!
+
+                    </h3>
+
+                    <p>Trust yourself and keep going.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis neque recusandae atque facere perferendis quisquam cumque! Non, nesciunt suscipit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
