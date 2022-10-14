@@ -16,7 +16,7 @@ header.masthead {
     position: relative;
     height: 100vh;
     background-color: #343a40;
-    background: url('https://images.pexels.com/photos/167480/pexels-photo-167480.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center;
+    background: url('../images/wild\ animal.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -206,7 +206,7 @@ hr.my-border {
 }
 
 .mybg-events {
-    background: url('https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center fixed;
+    background: url('../images/wild\ animal\ 1.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -236,10 +236,6 @@ p.myp.text-center {
     width: 100%;
     object-fit: cover;
 }
-
-
-
-
 
 
 .text-block {
@@ -323,13 +319,14 @@ section#group {
     border: 1px solid rgba(0, 0, 0, .05);
 }
 
-.mybg-music {
-    background: url('https://images.pexels.com/photos/1267317/pexels-photo-1267317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center fixed;
+.mybg-WILD {
+    background: url('../images/image37.jpg') no-repeat center center fixed;
+    color: black;
     background-size: cover;
 }
 
 section#marketplace {
-    background: #f7f7f7;
+    background: #0f0f0f;
     height: 100%;
     width: 100%;
     padding-top: 5rem;
@@ -663,4 +660,19 @@ p.myp-font {
 	.mob-ul{list-style-type: none; padding-left: 0;}
 	.header-wrap .sub-menu {width: 250px;}
 	.box img {height: 100%;}
+}
+.ris:hover
+{
+    color: #2008fc;
+    transition: all 1s ease-in-out;
+}
+.twi:hover
+{
+    color: rgb(8, 211, 238);
+    transition: all 1s ease-in-out;
+}
+.inst:hover
+{
+    color: red;
+    transition: all 1s ease-in-out;
 }
