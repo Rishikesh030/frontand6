@@ -16,7 +16,7 @@ header.masthead {
     position: relative;
     height: 100vh;
     background-color: #343a40;
-    background: url('../images/wild\ animal.jpg') no-repeat center center;
+    background: url('../images/pexels-pixabay-144251.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -206,7 +206,7 @@ hr.my-border {
 }
 
 .mybg-events {
-    background: url('../images/wild\ animal\ 1.jpg') no-repeat center center fixed;
+    background: url('../images/pexels-pixabay-289326.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -320,7 +320,7 @@ section#group {
 }
 
 .mybg-WILD {
-    background: url('../images/image37.jpg') no-repeat center center fixed;
+    background: url('../images/nature4.jpg') no-repeat center center fixed;
     color: black;
     background-size: cover;
 }
