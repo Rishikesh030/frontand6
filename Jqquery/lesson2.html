@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>input tag in html</h1>
+    <form novalidate action="success.html" method="post" autocomplete="on" enctype="multipart/form-data">
+        Email<input type="email" placeholder="email address" autocomplete="off" required> <br>
+        Password <input type="password" placeholder="password" autocomplete="off" required> <br>
+
+        birthdate <input type="date" required min="1900-01-01" max="2022-08-06"> <br>
+        brithtime <input type="time" required> <br>
+        weight <input type="number" placeholder="weight" required min="1" max="150"> <br>
+        favourite color <input type="color" required> <br>
+        height <input type="range" required min="1" max="8"> <br>
+        adhar card number <input type="text" pattern="[0-9]{12}" required>
+        select photo <input type="file" multiple accept="image/*"> <br>
+        select resume (<1mb)
+       <input id="resume" type="file" accept="application/pdf"> <br>
+       <input type="submit" value="submit as student"> <br>
+       <input type="submit" value="submit as teacher" formaction="success2.html">
+     </form>
+</body>
+</html>
