@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Animation</h1>
+    <table align="center"  cellpadding="10" width="100%" >
+        <tr>
+            <td align="center" width="25%">
+                <img src="https://picsum.photos/200" alt="" >
+            </td>
+            <td align="center" width="26%">
+                <img src="https://picsum.photos/205" alt="" >                
+            </td>
+            <td align="center" width="27%">
+                <img src="https://picsum.photos/240" alt="" >
+            </td>
+            <td align="center" width="28%">
+                <img src="https://picsum.photos/245" alt="" >
+            </td>
+            <td align="center" width="29%">
+                <img src="https://picsum.photos/250" alt="" >
+            </td>
+        </tr>
+    </table>
+    <script src="../jquery/jquery.min.js"></script>
+    <script>
+        var duration= 500;
+        $(document).ready(function(){
+            $("img").mouseenter(function(){
+                $(this).fadeOut("slow",function(){
+                    $(this).fadeIn("slow")
+                });
+            });
+        });
+    </script>
+</body>
+</html>
