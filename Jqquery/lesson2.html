@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form
+        {
+            background-color:#3A3B3C;
+            padding: 10px;
+        }
+        input
+        {
+         margin-top: 10px;
+         margin-left: 10px;
+         border: solid black 1px;
+        }
+    </style>
 </head>
 <body>
-    <h1>input tag in html</h1>
+    <h1 align="center">input tag in html</h1>
     <form novalidate action="success.html" method="post" autocomplete="on" enctype="multipart/form-data">
         Email<input type="email" placeholder="email address" autocomplete="off" required>  <br>
         Password <input type="password" placeholder="password" autocomplete="off" required>  <br>
@@ -16,7 +29,7 @@
         weight <input type="number" placeholder="weight" required min="1" max="150">  <br>
         favourite color <input type="color" required> <br>
         height <input type="range" required min="1" max="8">  <br>
-        adhar card number <input type="text" pattern="[0-9]{12}" required>
+        adhar card number <input type="text" pattern="[0-9]{12}" required> <br> 
         select photo <input type="file" multiple accept="image/*">  <br>
         select resume (<1mb)
        <input id="resume" type="file" accept="application/pdf"> <br>
@@ -25,7 +38,14 @@
      </form>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script>
-        
+        $('#resume').bind('change', function(){
+          var size = parseInt(parseInt(this.files[0].size)/1024);
+          if(size>1024)
+          {
+            alert("you have selected file whose size is > 1mb limit");
+            $("#resume").val('');
+          }  
+        });
      </script>
 </body>
 </html>
