@@ -1,7 +1,75 @@
-body {
-	font-family: 'Open Sans', sans-serif !important;
-    background: #fff;
-    color: #222;
+body
+
+.subscribe-area {
+    background-image: linear-gradient(to top, #1900fb 0%, #56c468 100%);
+    }
+    
+    .pb-50 {
+        padding-bottom: 50px;
+    }
+    .pt-70 {
+        padding-top: 50px;
+    }
+    
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+    
+    .subscribe-text span {
+        font-size: 12px;
+        font-weight: 550;
+        color: rgb(26, 24, 24);
+        letter-spacing: 5px;
+    }
+    .subscribe-text h2 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 250;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    .subscribe-wrapper {
+        overflow: hidden;
+    }
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+    .subscribe-form {
+    }
+    .subscribe2-wrapper .subscribe-form input {
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 300;
+        height: 57px;
+        margin-right: 17px;
+        padding-left: 35px;
+        width: 70%;
+        cursor: pointer;
+    }
+     
+    .subscribe2-wrapper .subscribe-form button {
+        background: #ffff;
+        border: none;
+        border-radius: 30px;
+        color: #4b5d73;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 18px 46px;
+        transition: all 0.3s ease 0s;
+    }
+    .subscribe2-wrapper .subscribe-form button i {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+{
+	font-family: 'Open Sans', sans-serif !important;   
 }
 
 .navbar-shrink{
@@ -462,9 +530,6 @@ li.nav-item a:hover {
     background: #008ba3;
     color: #ffffff !important;
 }
-
-
-
 .floating-arrow {
     -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
     -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
