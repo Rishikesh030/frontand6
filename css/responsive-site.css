@@ -1,0 +1,53 @@
+/* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+@media (min-width: 1281px) {
+    /* code in this block will be applied only if device width>1281 */
+    }
+    
+    /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    /* code in this block will be applied only if device width>1025 and <1280 */
+            #site-heading
+            {
+                font-size: 1.5rem;
+            }
+            #menu>ul>li>a:link,#menu>ul>li>a:visited
+            {
+                font-size: 16px;
+            }
+    }
+    
+    /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+        #site-heading
+        {
+            font-size: 1rem;
+        }
+        #menu>ul>li>a:link,#menu>ul>li>a:visited
+        {
+            font-size: 11px;
+        }
+    }
+    
+    /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+    @media (min-width: 320px) and (max-width: 768px) {
+        /* code in this block will be applied only if device width>320 and <480 */
+        #header 
+        {
+            flex-direction: column;
+        }
+        #menu>ul
+        {
+            flex-direction: column;
+        }
+        #menubutton
+        {
+          visibility: visible;
+          text-align: right;
+          margin-right: 10px;
+        }
+        #footer-links
+        {
+            flex-direction: column;
+        }
+    }

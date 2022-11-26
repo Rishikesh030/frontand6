@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans:wght@700&family=Uchen&display=swap" rel="stylesheet"> 
+    <style>
+        * 
+        {
+            margin:0px;
+            padding:0px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 1.428;
+        }
+        h3
+        {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+        }
+        p 
+        {
+            font-family: 'Uchen', serif;
+            text-align: justify;
+            padding:5px;
+        }
+        #section
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }        
+        .news
+        {
+            background-color: aliceblue;
+            margin:10px 10px;   
+        }
+        /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+        @media (min-width: 1281px) {
+            .news 
+            {
+                
+                width: calc(25% - 20px);
+            }
+            h3 
+            {
+                font-size: medium;
+            }
+            p 
+            {
+                font-size: 16px;
+            }
+        }
+
+        /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+        @media (min-width: 1025px) and (max-width: 1280px) {
+        /* code in this block will be applied only if device width>1025 and <1280 */
+            .news 
+            {
+                
+                width: calc(33% - 20px);
+            }
+            h3 
+            {
+                font-size: large;
+            }
+            p 
+            {
+                font-size: 17px;
+            }
+        }
+
+        /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+        /* code in this block will be applied only if device width>768 and <1024 */
+            .news 
+            {
+                
+                width: calc(50% - 20px);
+            }
+            h3 
+            {
+                font-size: x-large;
+            }
+            p 
+            {
+                font-size: 18px;
+            }
+        }
+        /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 768 */ 
+        @media (min-width: 320px) and (max-width: 767px) {
+            .news 
+            {
+                width: 100%;
+            }
+            h3 
+            {
+                font-size: xx-large;
+            }
+            p 
+            {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="section">
+        <div class="news">
+            <h3>Cricket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex nihil accusamus tempore facilis labore vitae quibusdam sed totam vel, placeat reprehenderit, exercitationem similique neque debitis quisquam iste facere, iusto sequi excepturi alias. Voluptas, fuga corrupti voluptate ex sed hic facilis ab aliquid, vitae dicta esse ipsam iure culpa itaque sequi blanditiis repellendus non! Quam perspiciatis omnis magni? Deleniti dolorum tenetur, voluptates obcaecati numquam alias, eligendi voluptate ipsa, magnam minima soluta animi aut! Debitis veritatis fugit esse quos porro quis, minima accusantium impedit? Sunt debitis aliquam, natus ab quaerat dolorum consequuntur totam ducimus porro officia voluptate, nesciunt doloremque commodi temporibus.</p>
+        </div>
+        <div class="news">
+            <h3>Football</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex nihil accusamus tempore facilis labore vitae quibusdam sed totam vel, placeat reprehenderit, exercitationem similique neque debitis quisquam iste facere, iusto sequi excepturi alias. Voluptas, fuga corrupti voluptate ex sed hic facilis ab aliquid, vitae dicta esse ipsam iure culpa itaque sequi blanditiis repellendus non! Quam perspiciatis omnis magni? Deleniti dolorum tenetur, voluptates obcaecati numquam alias, eligendi voluptate ipsa, magnam minima soluta animi aut! Debitis veritatis fugit esse quos porro quis, minima accusantium impedit? Sunt debitis aliquam, natus ab quaerat dolorum consequuntur totam ducimus porro officia voluptate, nesciunt doloremque commodi temporibus.</p>
+        </div>
+        <div class="news">
+            <h3>Hocky</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex nihil accusamus tempore facilis labore vitae quibusdam sed totam vel, placeat reprehenderit, exercitationem similique neque debitis quisquam iste facere, iusto sequi excepturi alias. Voluptas, fuga corrupti voluptate ex sed hic facilis ab aliquid, vitae dicta esse ipsam iure culpa itaque sequi blanditiis repellendus non! Quam perspiciatis omnis magni? Deleniti dolorum tenetur, voluptates obcaecati numquam alias, eligendi voluptate ipsa, magnam minima soluta animi aut! Debitis veritatis fugit esse quos porro quis, minima accusantium impedit? Sunt debitis aliquam, natus ab quaerat dolorum consequuntur totam ducimus porro officia voluptate, nesciunt doloremque commodi temporibus.</p>
+        </div>
+        <div class="news">
+            <h3>Basketball</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex nihil accusamus tempore facilis labore vitae quibusdam sed totam vel, placeat reprehenderit, exercitationem similique neque debitis quisquam iste facere, iusto sequi excepturi alias. Voluptas, fuga corrupti voluptate ex sed hic facilis ab aliquid, vitae dicta esse ipsam iure culpa itaque sequi blanditiis repellendus non! Quam perspiciatis omnis magni? Deleniti dolorum tenetur, voluptates obcaecati numquam alias, eligendi voluptate ipsa, magnam minima soluta animi aut! Debitis veritatis fugit esse quos porro quis, minima accusantium impedit? Sunt debitis aliquam, natus ab quaerat dolorum consequuntur totam ducimus porro officia voluptate, nesciunt doloremque commodi temporibus.</p>
+        </div>
+    </div>
+</body>
+</html>
