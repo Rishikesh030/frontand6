@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PersonalTrainer</title>
+    <style>
+        /* Style the header */
+.header {
+
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color:     #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+        /*CSS variables section*/
+:root {
+    
+    color:white;
+    }
+    /*Extra Large screens - Extra large desktops*/ 
+    /*General CSS and CSS reset*/
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    section{
+        margin-top: 46px;
+    }
+    
+    .hero{
+        background-image:url("https://source.unsplash.com/f4RBYsY2hxA/1200x670");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        
+    
+        
+    }
+    .hero-text{
+        background-color: rgba(4,7,32,0.5);
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color:white;
+        
+        text-shadow: 8px 10px 10px #000000;
+        border-top:none;
+        border-bottom: none;
+        padding: 90px 40px;
+        text-transform: uppercase;
+        font-size: 80px;
+        font-weight: 800;
+        
+    }
+    
+    .about{
+        
+        height: 700px;
+        background-image: url("https://source.unsplash.com/xwMlVSqP20U");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center;
+        
+    
+        
+    }
+    .icons{
+        font-size: 20px;
+        letter-spacing: 5px;
+    
+    }
+    .title{
+        color:white;
+        width:100%;
+        margin:auto;
+        padding:60px 10px;
+        font-size: 50px;
+        font-weight: 600;
+        margin-left: 10%;;
+        text-transform: uppercase;
+        width: 80%; 
+        
+    }
+    .about-main{
+        width: 90%;
+         
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .about-text{
+        background-color: rgb(16, 19, 47);
+        padding: 30px ;
+        width:500px;
+        
+    }
+    
+    h3{
+        font-size: 40px;
+        
+        font-weight: 600;
+        
+    }
+    .service{
+        padding-bottom: 100px;
+        background-color: black;
+        overflow: hidden;
+    }
+    .card{
+        width:80%;
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: auto;
+        overflow: hidden;
+    }
+    .card-list{
+        width:300px;
+        margin-top: 50px;
+        overflow: hidden;
+    
+    }
+    
+    .card-image{
+        width:100%;
+        height: 400px;
+    
+    }
+    .card-image img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-text{
+        width:90%;
+        
+    }
+    .testimony{
+        padding-bottom: 150px;
+        background-color: #0a0c0f;;
+        overflow: hidden;
+    
+    }
+    .testimony-main{
+        display: flex;
+        flex-wrap: wrap;
+        flex:1 1 ;
+        width:70%;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+    }
+    .testimony-image{
+        width:380px;
+        height: 300px;
+        margin-left: 40px;
+    
+    }
+    .testimony-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .testimony-text{
+        width: 40%;
+    
+    }
+    .contact{
+        
+        background-color: #242526;
+        padding-bottom: 150px;
+    }
+    .contact-image{
+        
+        width:500px;
+        overflow: hidden;
+    }
+    .contact-image img{
+        width:100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .contact-main{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .contact-form{
+        background-color: #eee;
+        padding:30px;
+    }
+    .input:focus,
+    textarea:focus{
+      outline: 1.5px solid gray;
+    }
+    
+    .input,
+    textarea {
+      width: 100%;
+      border: 1px solid #bdbdbd;
+      border-radius: 5px;
+    }
+    form{
+        
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        padding:10px !important;
+        margin: 10px 0px;
+        height: 45px;
+        border:1px solid ;
+    }
+    textarea{
+        height: 70px !important;
+    }
+    .name{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .name-list
+    {
+        width:48%;
+    
+    }
+    .contact-address{
+        padding-bottom: 150px;
+        background-color: #0a0c0f;;
+        overflow: hidden;
+    
+    
+    
+    }
+    .contact-address-list{
+        display: flex;
+        background-color: #0a0c0f;;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    .contact-list{
+        margin: 20px 0px !important;
+    }
+    h4{
+        text-transform: uppercase;
+    }
+    #navDemo a{
+        font-size: 12px;
+    }
+    
+    
+    /*MEDIA QUERIES*/
+    /*Large screens - Desktop*/
+    @media screen and (min-width: 1700px) {
+        section{
+            background-color: rgba(4,7,32,0.9);
+        }
+        .hero{
+            
+            margin: auto;
+            height: 900px;
+        }
+        .hero-text{
+            height: 900px;
+        }
+        .testimony-main{
+            width: 60%;
+            justify-content: space-evenly;
+       }
+       .contact-address-list{
+           
+           margin: auto;
+           width: 70%;
+       }
+    }
+    
+    /*medium screens - Laptops*/
+    @media screen and (max-width: 1024px) {
+        .hero{
+            background-image:url("https://source.unsplash.com/f4RBYsY2hxA/400x320");
+            height: 500px;
+            background-position: center;
+        }
+        .hero-text{
+            height: 500px;
+        }
+        h1{
+            font-size: 70px;
+        }
+        .testimony-main{
+            width: 90%;
+            justify-content: space-evenly;
+       }
+    }
+    
+    /*Small screens - tablets*/
+    @media screen and (max-width: 768px) {
+        .hero{
+            background-image:url("../images/image26.jpg");
+            height: 600px;
+            background-position: center;
+        }
+        .hero-text{
+            height: 600px;
+        }
+        h1{
+            font-size: 60px;
+        }
+        .about{
+            overflow: hidden;
+        }
+        .about-text{
+            background-color: rgba(4,7,32,.5);
+            
+        }
+        .card{
+            width: 90%;;
+        }
+        .card-list{
+            width: 250px;
+        }
+        .title{
+            font-size: 36px;
+        }
+    }
+    
+    /*Extra small screens - phones*/
+    @media screen and (max-width: 480px) {
+        .hero{
+            background-image:url("https://source.unsplash.com/f4RBYsY2hxA/600x");
+            height: 500px;
+            background-position: center;
+            
+    
+        }
+        .hero-text{
+            height: 500px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        .about-text{
+            background-color: rgba(4,7,32,.3);
+            
+        }
+        .title{
+        font-size: 30px; 
+        padding:30px 10px;  
+        
+        }
+        h3{
+            font-size: 25px;
+        }
+        .about{
+            height: 500px;;
+            overflow: hidden;
+            background-position-x:left ;
+        
+        }
+        .card{
+            width: 100%;;
+        }
+        .card-list{
+            width: 300px;
+        }
+        .testimony-main{
+            justify-content: center;
+        }
+        .testimony-text{
+            width: 80%;
+        }
+        .testimony-image{
+            margin-left:0px;
+            width:300px;
+        }
+        .contact-main{
+        width: 90%;
+        margin:auto;    
+        }
+        .name{
+            flex-direction: column;
+        }
+        .name-list{
+            width: 100%;
+        }
+        .contact-form{
+            width: 100%;
+        }
+        .contact-list{
+            width:80%;
+            border:1px solid rgb(77, 72, 72);
+            padding:20px;
+            border-radius: 10px;
+    
+        }.contact-list p{
+            font-size: 13px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>      
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">service</a>
+    <a href="#" class="right">Login form</a>
+  </div>
+  
+        <!-- Navbar -->
+        <!-- <div class="w3-top w3-text-white w3-black">
+            <div class="w3-bar  ">
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+              <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+              <a href="#service" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICE</a>
+              <a href="#testimony" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TESTIMONY</a>
+              <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            </div>
+          </div> -->
+          <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
+          <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+            <a href="#service" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICE</a>
+            <a href="#testimony" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TESTIMONY</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+          </div> -->
+    </div>
+    <section id="home">
+        <div class="hero">
+         <div class="hero-text">
+          <h1>Move Your Body,<br>
+             Shape Your Future</h1>      
+         </div>
+        
+        </div>
+    </section>
+    <main>
+      <div class="about" id="about">
+        <div>
+        <h2 class="title">
+               Get to Know me
+        </h2>
+        <div class="about-main">
+          <div>
+
+          </div>
+          <div class="about-text">
+             <h3>I'm Paula <br>Personal Trainer </h3>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, mollitia ex similique ea sit fuga dolores autem omnis beatae iste voluptatem magni saepe .</p>
+             <div style="margin-top:40px">
+              <span class="w3-text-white social" >
+                <p >Follow Me on Social media</p>
+                <div class="w3-margin-top">
+             <a href="#">  <i class="fa fa-facebook-official w3-hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
+             <a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
+             </div>
+              </span>
+             </div>
+            
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+      <div class="service" id="service">
+         <h2 class="title"> __Service</h2>
+
+         <div class="card">
+           <div class="card-list">
+              <div class="card-image">
+                <img src="https://source.unsplash.com/7kEpUPB8vNk" alt="Anastase Maragos"/>
+              </div>
+              <div class="card-text"> 
+                <h4>Weight Lifting</h4>
+                <p>$20/Month</p>
+                <a href="#join">
+                  <button class="w3-btn w3-red w3-margin-top w3-round" style="width:100%">Join</button>
+                </a>
+
+              </div>
+           </div>
+           <div class="card-list">
+            <div class="card-image">
+              <img src="https://source.unsplash.com/rZmCg1_QOYQ" alt="Sergio Pedemonte"/>
+            </div>
+            <div class="card-text"> 
+              <h4>Bodybuilding</h4>
+              <p>$10/Month</p>
+              <a href="#join">
+                <button class="w3-btn w3-red w3-margin-top w3-round" style="width:100%">Join</button>
+              </a>
+            </div>
+
+           </div>
+           <div class="card-list"><div class="card-image">
+            <img src="https://source.unsplash.com/0ShTs8iPY28" alt=""Spencer Davis
+            />
+          </div>
+          <div class="card-text"> 
+            <h4>Functional Fitness</h4>
+            <p>$40/Month</p>
+            <a href="#join">
+              <button class="w3-btn w3-red w3-margin-top w3-round" style="width:100%">Join</button>
+            </a>
+
+          </div>
+
+           </div>
+         </div>
+      </div>
+
+      <div class="testimony" id="testimony">
+        <h2 class="title"> __ What They say about us</h2>
+
+        <div class="testimony-main">
+                 <div class="testimony-image">
+                   <img src="https://source.unsplash.com/CnEEF5eJemQ" alt="Karsten Winegeart"/>
+                 </div>
+                 <div class="testimony-text">
+                   <h3>Trenton L. Embree</h3>
+                   <p style="font-style: italic;">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni, minus saepe exercitationem quis odio molestiae eveniet fuga suscipit sequi totam accusantium inventore voluptas illum beatae, voluptate quo? Accusantium, maiores."
+                   </p>
+
+                 </div>
+        </div>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="https://source.unsplash.com/eot-ka5dM7Q" alt="Hayley Kim Design"/>
+          </div>
+          <div class="testimony-text">
+            <h3>Amanda E. Uren</h3>
+            <p style="font-style: italic;">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni, minus saepe exercitationem quis odio molestiae eveniet fuga suscipit sequi totam accusantium inventore voluptas illum beatae, voluptate quo? Accusantium, maiores."
+            </p>
+
+          </div>
+ </div>
+ <div class="testimony-main">
+  <div class="testimony-image">
+    <img src="https://source.unsplash.com/U5kQvbQWoG0" alt="Scott Webb"/>
+  </div>
+  <div class="testimony-text">
+    <h3>Heather J. Hawker</h3>
+    <p style="font-style: italic;">
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni, minus saepe exercitationem quis odio molestiae eveniet fuga suscipit sequi totam accusantium inventore voluptas illum beatae, voluptate quo? Accusantium, maiores."
+    </p>
+
+  </div>
+</div>
+
+
+
+      </div>
+      <div class="contact" id="join">
+        <h2 class="title"> __ Join Us</h2>
+        <div class="contact-main">
+
+          <div class="contact-form">
+            <form >
+              <div class="name"> 
+                <input  class="input name-list" type="text" placeholder="First Name*">
+                <input  class="input name-list" type="text" placeholder="Last Name*">
+              </div>
+              <input id="email" class="input"  type="text" placeholder="Email*">
+              <textarea  id="email" class="input" minlength="100"  placeholder="Your Message*" required></textarea>
+             <button class="w3-btn w3-red w3-round">Send</button>
+            </form>
+            </div>
+  
+          
+          <div class="contact-image">
+            <img src="https://source.unsplash.com/ZXq7xoo98b0" alt=""Bruce mars/>
+  
+          </div>
+        </div>
+      </div>
+      <div class="contact-address" id="contact">
+        <h2 class="title"> __ GET IN TOUCH</h2>
+        <div class="contact-address-list">
+          <div class="contact-list">
+            <h4>location</h4>
+            <p>7018 Baker St.
+             Englewood, NJ 07631</p>
+            <p>4 Trenton St.
+             Geneva, IL 60134</p>
+            <p>116 N. Maiden St.
+             Hempstead, NY 11550</p>
+          
+          </div>
+          <div class="contact-list">
+             <h4>Opening Hour</h4>
+             <p>Monday- Saturday: 8am -9:30pm</p>
+             <p>Sunday:8am- 9pm</p>
+       
+          </div>
+          <div class="contact-list">
+            <h4>Say hello</h4>
+            <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> 763-957-6781</p>
+            <p><i class="fa fa-phone" style="margin-right: 8px;font-size: 20px;"></i>706-734-2591</p>
+            <p><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i>Paula1996l@yahoo.com</p>
+             
+        </div>
+
+        </div>
+
+      </div>
+
+    
+    </main>
+    <div class="w3-padding w3-center" style="background: #FFF4A3;padding: 10px 0px !important; color:#282A35; ">
+      <div style="display: flex; justify-content: center;align-items: center; flex-wrap: wrap;">
+        <p style="margin: 10px !important ">This website was made with w3schools Spaces. Make your own free website today</p>
+        <button class="w3-margin-top w3-btn w3-text-white  w3-round-xxlarge" style=" background-color:#282A35;padding: 8px 25px;  margin:0px  !important">Start now</button>
+      </div>
+  
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+</body>
+</html>
