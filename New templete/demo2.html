@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.head {
+    text-align: center;
+    font-size: 26px;
+}
+  		.img_section figure img {
+  			transform: scale(1);
+  			transition: .3s ease-in-out;
+  			height: 300;
+  			width: 200;  			
+  		}
+		.img_section figure:hover img {
+			transform: scale(1.3);
+		}
+		h2.zoom {
+    padding-bottom: 33px;
+    padding-left: 25px;
+}
+.img_section2 figure img {
+	width: 300px;
+	height: auto;
+	transition: .3s ease-in-out;
+
+}
+.img_section2:hover figure img{
+	width: 350px;
+}
+.img_section3 figure img{
+	margin-left: 30px;
+	width: 300px;
+	transition: .3s ease-in-out;
+}
+.img_section3:hover figure img{
+	margin-left: 0;
+	
+}
+.img_section4 figure img{
+	transform:  scale(1);
+	transition: .3s ease-in-out;
+}
+.img_section4:hover figure img{
+	transform: rotate(10deg) scale(1);
+	
+}
+.img_section5 figure img{
+	filter: blur(3px);
+	transition: .3s ease-in-out;
+}
+.img_section5:hover figure img{
+	filter: blur(0);
+	
+}
+.img_section6 figure img{
+	filter: grayscale(0) blur(0);
+	transition: .3s ease-in-out;
+	height: 300;
+	width: 200;
+}
+.img_section6:hover figure img{
+	filter: blur(3px) grayscale(100%);
+	
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <h1 class="head">Different types of hover effect</h1>
+                <h2 class="zoom">zoom in#1</h2>
+                
+                <div class="col-sm-6">
+                    <div class="img_section">
+                        <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="img_section">
+                        <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="zoom_in">zoom in#2</h1>               
+                    <div class="col-sm-6">
+                        <div class="img_section2">
+                            <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="img_section2">
+                            <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="slide">slide</h1>
+                    <div class="col-sm-6">
+                        <div class="img_section3">
+                            <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="img_section3">
+                            <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <h2 class="rotate">Rotate</h1>
+                        <div class="col-sm-6">
+                            <div class="img_section4">
+                                <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="img_section4">
+                                <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <h2 class="blur">Blur effect</h1>
+                            <div class="col-sm-6">
+                                <div class="img_section5">
+                                    <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="img_section5">
+                                    <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <h2 class="blur">Blur+gray effect</h1>
+                                <div class="col-sm-6">
+                                    <div class="img_section6">
+                                        <figure><img src="http://i3.wp.com/ytimg.googleusercontent.com/vi/g9Is-3fTh7Q/mqdefault.jpg"></figure>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="img_section6">
+                                        <figure><img src="https://i.ytimg.com/vi/v7U78sJxAQk/mqdefault.jpg"></figure>
+                                    </div>
+                                </div>                            
+                       </div>
+    </div>
+</body>
+</html>
