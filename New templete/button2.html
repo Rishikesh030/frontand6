@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 40rem;
+}
+
+.background{
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top, rgb(67, 76, 100), rgb(48, 49, 51)),
+            radial-gradient(ellipse at bottom, rgb(89, 69, 89), rgb(107, 139, 174));
+}
+article{
+  width: 25rem;
+  height: 100%;
+  min-height: 40rem;
+   background: linear-gradient(45deg, rgb(86, 84, 83), rgb(86, 84, 103));
+  box-shadow: inset 0 0 1.4rem rgb(56, 56, 58);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shiny-button {
+  margin: 3rem auto;
+  padding: 1.3rem 2rem 1.5rem 2rem;
+  position: relative;
+  font-size: 2.5rem;
+  z-index: 1;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0rem 0.25rem 0.25rem rgb(45, 50, 58);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.shiny-button:active{
+  transform: translateY(0.3rem);
+   box-shadow: 0rem 0.1rem 0rem rgb(45, 50, 58); 
+}
+.shiny-button p {
+  margin: 0;
+  text-shadow: 0 0.2rem 0.2rem rgb(200, 222, 237);
+}
+canvas{
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">  
+        <article>
+          <div data-shiny-button class="shiny-button">
+              <p>Shiny Button</p>
+              <canvas></canvas>
+           </div>
+          
+            <div data-shiny-button class="shiny-button">
+              <p>Shiny Button</p>
+              <canvas></canvas>
+           </div>
+          
+            <div data-shiny-button class="shiny-button">
+              <p>Shiny Button</p>
+              <canvas></canvas>
+           </div>
+        </article>
+        </div>
+        <script src="../phpb20/jq/jquery/jquery.min.js"></script>
+        <script>
+            {
+  const colorStops = [
+    [0, "rgb(84, 94, 109)"],
+    [0.2, "rgb(111, 122, 137)"],
+    [0.4, "rgb(153, 156, 168)"],
+    [0.6, "rgb(195, 200, 219)"],
+    [0.9, "rgb(74, 73, 83)"],
+    [1, "rgb(93, 93, 93)"]
+  ];
+
+  const buttons = document.querySelectorAll("[data-shiny-button]");
+  const createShinyButtons = (...buttons) => {
+    const shines = buttons.map(button => {
+      
+      const loopPartial = () => {
+        const c = button.querySelector("canvas");
+        const $ = c.getContext("2d");
+        const { width, height } = button.getBoundingClientRect();
+        let w = (c.width = width);
+        let h = (c.height = height);
+        
+        return (x, y, width, height, i) => {
+          const xRatio = width / x || 0;
+          const yRatio = height / y || 0;
+          console.log(i);
+          const diff = i + 1;
+          const gradient = $.createLinearGradient(
+            yRatio * (w / 2) / 8 * -diff * 2,
+            xRatio * (w / 2) / 8 - diff * 2,
+            xRatio * (w / 2),
+            yRatio * h / (diff / 2)
+          );
+
+          colorStops.forEach(([stop, color]) =>{
+            gradient.addColorStop(stop, color);
+          });
+
+          $.fillStyle = gradient;
+          $.fillRect(0, 0, w, h);
+        };
+      };
+      const loop = loopPartial();
+      const innerWidth = window.innerWidth;
+      const innerheight = window.innerHeight;
+      // Init
+      loop(innerWidth / 2, innerHeight / 2, innerWidth, innerHeight, 0);
+      return loop;
+    });
+
+    document.addEventListener("mousemove", ({ clientX, clientY }) => {
+      shines.forEach((shine, i) => {
+        const innerWidth = window.innerWidth;
+        const innerHeight = window.innerHeight;
+        requestAnimationFrame(() =>
+          shine(clientX, clientY, innerWidth, innerHeight, i)
+        );
+      });
+    });
+  };
+  createShinyButtons(...buttons);
+}
+
+        </script>
+</body>
+</html>
