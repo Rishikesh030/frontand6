@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>first way to create object</h1>
+                        <hr>
+                        <h3>use console to see output</h3> 
+                    </div>
+                    <div class="card-body" id="output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+    //1st way to create object
+    const student = {
+        //properties or state 
+        name:"Prakash Mojidara",
+        age:25,
+        weight: 87.11,
+        gender:true,
+        city:'Bhavnagar',
+
+        //method
+        GreetingMessage()
+        {
+            console.log("Good morning Mr/miss/mrs " + this.name);
+            //this.property name is required to access or change any property/state from the method of the same object
+        }
+    };
+    console.log(student);
+    var message = "Name " + student.name + " age " + student.age + " weight " + student.weight + " gender " + student.gender + " city = " + student.city;
+    console.log(message);
+    student.name = "Dipali chavda";
+    student.gender = 'female';
+    student.age = 24;
+    student.weight = 50;
+    student.email = 'dipali@gmail.com' //it will create new property in student oboject
+    document.getElementById("output").innerHTML = message;
+    console.log("after change student object has")
+    console.log(student);
+
+    //calling method of object
+    student.GreetingMessage();
+</script>
+</body>
+</html>
