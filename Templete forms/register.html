@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+form {
+  padding: 30px;
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 4px;
+  width: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  box-shadow: 6px 9px 15px 6px #4c4b4b3d;
+}
+h2{
+  color: #e59f6e;
+    text-align: center;
+    margin-bottom: 30px;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form label{
+  margin-top: 10px;
+}
+form input {
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  box-sizing: border-box;
+  border: 1px solid #7e7c7c;
+  padding: 10px;
+  outline:none;
+}
+form button {
+  padding:10px;
+  background: #e19f73;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+box-shadow: skyblue;
+}
+form .error {
+  color: #ff0000;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" name="registration">
+        <h2>Registration</h2>
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" placeholder="">
+  
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" placeholder="">
+  
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="">
+  
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="●●●●●">
+  
+      <button type="submit">Register</button>
+    </form>
+  
+    
+  
+  
+  <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script type="text/javascript">
+      
+  $(function() {
+    
+    $("form[name='registration']").validate({
+  
+      rules: {
+       
+        firstname: "required",
+        lastname: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        password: {
+          required: true,
+          minlength: 5
+        }
+      },
+  
+      messages: {
+        firstname: "Please enter your firstname",
+        lastname: "Please enter your lastname",
+        password: {
+          required: "Please provide a password",
+          minlength: "Your password must be at least 5 characters long"
+        },
+        email: "Please enter a valid email address"
+      },
+      
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });
+  </script>
+</body>
+</html>

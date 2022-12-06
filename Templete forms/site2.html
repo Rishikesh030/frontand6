@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700,800|Oswald:200,300,400,500,600,700|Roboto:400,500,700,900&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese');
+:root{
+	--darkblack:#2d2d32;
+	--lightblack:#35353a;
+	--yellow:#f9bf26;
+	--gray:#999;
+	--white:#fff;
+	--black:#262627;
+
+}
+body{overflow: hidden;}
+*{font-family: 'Mukta', sans-serif; padding: 0px; margin:0px;}
+.container{width: 1150px; max-width: 100%; margin: 0 auto;}
+header{background: var(--darkblack); padding: 0 0 0 95px;}
+.col-4{width: 25%; float: left;}
+.col-8{width: 75%; float: left;}
+.clearfix{clear: both;}
+.logo{color: var(--white);font-weight:100; padding: 20px 0px;}
+.logo span{color: var(--yellow); font-weight: bold;}
+.sidebar{width:95px;height:100vh; background: var(--darkblack);
+    float: left; position: relative;}
+.c8{
+	padding: 20px 0px;
+	background: var(--lightblack);
+	height: 53px;
+}
+.c8 p:nth-child(1){
+	margin-left:30%;
+}
+.p1{
+	font-family: 'Roboto', sans-serif; 
+	letter-spacing: 3px; 
+	text-transform: uppercase;
+	font-size: 11px; 
+	color: var(--gray); 
+	margin-top: 20px; 
+	position: relative; 
+	display: inline-block;
+	margin-left: 50px;
+	float: left;
+}
+
+.p1 a{color: var(--white); text-decoration: none;}
+.main-box{width:1271px;float: left;}
+.content{width: 380px; float: left; background: var(--darkblack); height:100vh;
+border: 1px solid rgba(255, 255, 255, 0.03);}
+.image-box{width: 889px; float: left;}
+.p1:after{
+	content: '';
+	width: 15px;
+	height: 2px;
+	top: 9px;
+	background:var(--yellow);
+	position: absolute;
+	left:-30px;
+}
+
+.nav:after{
+	content: '';
+	width: 50px;
+	height:1px;
+	top: 47px;
+	background:var(--yellow);
+	position: absolute;
+	left:-24px;
+}
+.nav{
+	float: left;
+	height: 53px;
+    padding: 20px 40px 20px 60px;
+    background: var(--darkblack);
+    margin-top: -20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gray);
+    margin-left: 101px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.menu{
+	    position: relative;
+    margin-top: 10px;
+    width: 39px;
+}
+.menu span{transition:1s;}
+.menu span:nth-child(1){
+	width: 35px;
+	height: 2px;
+	background: var(--yellow);
+	position: absolute;
+}
+.menu span:nth-child(2){
+	width: 20px;
+	height: 2px;
+	background: var(--yellow);
+	position: absolute;
+	top: 10px;
+}
+.menu span:nth-child(3){
+	width: 0px;
+	height: 2px;
+	background: var(--yellow);
+	position: absolute;
+	top: 20px;
+}
+.menu span:nth-child(4){
+	position: absolute;
+	top: 30px;
+}
+.nav:hover span:nth-child(3){
+	width: 35px;
+	transition: width 1s;
+}
+.nav:hover span:nth-child(2){
+	width: 35px!important;
+	transition: width 1s;
+}
+.image-box img{width: 103%;}
+.p2{
+	transform: rotateZ(270deg);
+	color: var(--gray);
+	letter-spacing: 2px;
+	font-size: 14px;
+	position: absolute;
+	width: 200px;
+	left: -55px;
+    top: 130px;
+    filter: blur(0.1px);
+}
+.p2:after{
+	width: 150px;
+	height: 30px;
+	content: '';
+	position: absolute;
+	background: var(--lightblack);
+	top: -3px;
+    left: 92px;
+    z-index: -1;
+}
+.social{
+	text-align: center;
+	margin-top: 270px;
+}
+.sicon{
+	color: var(--gray);
+	width: 20px;
+	height: 20px;
+	display: block!important;
+    padding: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    margin: 0 auto;
+}
+.sicon:hover{
+	background: #99999924;
+	transition:1s;
+}
+.p3{
+	transform: rotateZ(270deg);
+    color: var(--gray);
+    letter-spacing: 2px;
+    font-size: 14px;
+    position: absolute;
+    width: 95px;
+    left: 0px;
+    bottom: 140px;
+    filter: blur(0.1px);
+}
+.p3:after{
+	width: 10px;
+	height: 1px;
+	content: '';
+	position: absolute;
+	background: var(--yellow);
+	top: 11px;
+    left: 5px;
+    z-index: -1;
+}
+.p3:before{
+	width: 10px;
+	height: 1px;
+	content: '';
+	position: absolute;
+	background: var(--yellow);
+	top: 11px;
+    left: 5px;
+    z-index: -1;
+    transform: rotateZ(270deg);
+}
+.head{
+	font-size: 59px;
+    line-height: 65px;
+    color: white;
+    margin-left: 213px;
+    margin-top: 150px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.head span{
+	color: var(--yellow);
+}
+
+.head-1{
+	font-size: 59px;
+    line-height: 65px;
+    color: white;
+    margin-left: 213px;
+    margin-top: 150px;
+    position: absolute;
+    display: none;
+    text-transform: uppercase;
+}
+.head-1 span{
+	color: var(--yellow);
+}
+.no{
+	 position: absolute;
+    z-index: 99999;
+    top: 45%;
+    right: 23px;
+    color: var(--gray);
+}
+.no span{
+	display: block;
+	margin-top: 10px;
+	font-size: 12px;
+
+}
+.active{
+	font-size: 16px!important;
+	font-weight: bold;
+	color: var(--white);
+
+}
+
+.button{
+	position: absolute;
+    z-index: 99999;
+    bottom:20px;
+    right: 23px;
+    color: var(--gray);
+}
+.button a{
+	background: var(--darkblack);
+	padding: 25px 40px;
+	color: var(--gray);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.button a:hover{
+	background: var(--yellow);
+	color: var(--darkblack);
+	transition:1s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999999;
+  top: 93px;
+  right: 0;
+  background-color:var(--black);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--gray);
+  display: block;
+  transition: 0.3s;
+}
+.sidenav1 {
+  height: 34%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    bottom: -10px;
+    left: 96px;
+    background-color: var(--black);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--gray);
+  display: block;
+  transition: 0.3s;
+}
+.sidenav1 .closebtn1{
+	 position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.search{
+	width: 80%;
+	padding: 5px;
+	margin: 25px;
+	background: url(../image/search.png), #fff;
+	background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center right 10px;
+}
+
+.sidenav a:hover {
+  color: var(--yellow);
+}
+.sidenav1 a:hover {
+  color: var(--yellow);
+}
+    </style>
+</head>
+<body>
+    <title>Dark Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>	
+		<div class="col-4">
+			<h1 class="logo"><span>M-</span>SoftTech</h1>
+		</div>
+		<div class="col-8 c8" >
+			<p class="p1">Call <a href="#">+2154-4554-8888</a></p>
+			<p class="p1">Email <a href="#">M-softtech@12.com</a></p>
+			<div class="nav">
+				<a href="#" class="closebtn" onclick="closeNav()" style="position: absolute;
+    font-size: 44px;
+    top: -6px;
+    left: 67px;
+    color: transparent;">×</a>
+				<div class="menu" onclick="openNav()">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>Menu</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+	
+</header>
+
+<div class="sidebar">
+			<p class="p2">HOME HALF SLIDER</p>
+			<div class="social">
+			<i class="fa fa-facebook sicon"></i>
+			<i class="fa fa-instagram sicon" style="border-bottom-color: var(--yellow)"></i>
+			<i class="fa fa-twitter sicon"></i>
+			<i class="fa fa-google sicon"></i>
+			<p class="p3" onclick="openNav1()">SHARE</p>
+		</div>
+
+		<div id="mySidenav1" class="sidenav1">
+		  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">×</a>
+		  <a href="#">FACEBOOK</a>
+		  <a href="#">INSTAGRAM</a>
+		  <a href="#">TWITTER</a>
+		  <a href="#">GOOGLE PLUS</a>
+		</div>
+</div>	
+<div class="main-box">
+	<div class="content">
+		<div>
+			<h1 class="head">The Luxury <br>Norway<br> <span>House</span> in Forest</h1>
+			<h1 class="head-1">Design  and   <br>renovation of<br> <span>Flat</span> in Forest</h1>
+		</div>
+
+
+		
+	</div>
+	<div class="image-box">
+		<img src="../images/pexels-max-vakhtbovych-6588594.jpg">
+		<div class="no">
+			<span class="active">01</span>
+			<span>02</span>
+			
+
+		</div>
+		<div class="button">
+			<a href="#" class="prev"><  preview</a>
+			<a href="#" class="next">Next  ></a>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+		  
+		  <input type="text" class="search">
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
+		</div>
+
+	</div>
+	<div class="clearfix"></div>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "350px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function openNav1() {
+  document.getElementById("mySidenav1").style.width = "300px";
+}
+
+function closeNav1() {
+  document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".menu").click(function(){
+    $(".menu span:nth-child(1)").css('transform','rotateZ(45deg)');
+    $(".menu span:nth-child(2)").css('transform','rotateZ(-45deg)');
+    $(".menu span:nth-child(2)").css('width','35px');
+    $(".menu span:nth-child(2)").css('top','1px');
+    $(".menu span:nth-child(3)").css('display','none');
+  });
+  $(".closebtn").click(function(){
+    $(".menu span:nth-child(1)").css('transform','rotateZ(0deg)');
+    $(".menu span:nth-child(2)").css('transform','rotateZ(0deg)');
+    $(".menu span:nth-child(2)").css('width','20px');
+    $(".menu span:nth-child(2)").css('top','10px');
+    $(".menu span:nth-child(3)").css('display','block');
+    $(".menu span:nth-child(3)").css('width','');
+  });
+
+  $(".next").click(function(){
+    $(".no span:nth-child(1)").removeClass('active');
+    $(".no span:nth-child(2)").addClass('active');
+    $('.head').hide(1000);
+    $('.head-1').show(1000);
+  });
+  $(".prev").click(function(){
+    $(".no span:nth-child(2)").removeClass('active');
+    $(".no span:nth-child(1)").addClass('active');
+     $('.head-1').hide(1000);
+    $('.head').show(1000);
+  });
+
+  
+});
+</script>
+</body>
+</html>
