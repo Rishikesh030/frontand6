@@ -1,0 +1,10 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 08 Dec 2022 20:13:54 at https://demo.templatemonster.com/demo/297231.html?_gl=1*1k6h1g6*_ga*MTg4NDgxODU5OS4xNjcwMzIwODUx*_ga_FTPYEGT5LY*MTY3MDUxMDE4NC40LjEuMTY3MDUxMDU2NC42MC4wLjA.&_ga=2.233248023.883624492.1670502968-1884818599.1670320851 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://demo.templatemonster.com/demo/297231.html?_gl=1*1k6h1g6*_ga*MTg4NDgxODU5OS4xNjcwMzIwODUx*_ga_FTPYEGT5LY*MTY3MDUxMDE4NC40LjEuMTY3MDUxMDU2NC42MC4wLjA.&_ga=2.233248023.883624492.1670502968-1884818599.1670320851 -O1 "C:\My Web Sites\weding" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:13:55	Error: 	"Service Temporarily Unavailable" (503) at link https://demo.templatemonster.com/demo/297231.html?_gl=1*1k6h1g6*_ga*MTg4NDgxODU5OS4xNjcwMzIwODUx*_ga_FTPYEGT5LY*MTY3MDUxMDE4NC40LjEuMTY3MDUxMDU2NC42MC4wLjA.&_ga=2.233248023.883624492.1670502968-1884818599.1670320851 (from primary/primary)
+20:13:55	Warning: 	No data seems to have been transferred during this session! : restoring previous one!
