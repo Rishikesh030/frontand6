@@ -20,7 +20,7 @@
             margin-bottom: 0px;
         }
         body {
-            background: linear-gradient(45deg, #85a8ff, #208580);
+            background: linear-gradient(45deg, #8CC6EC, #92A8E5);
             min-height: 100vh;
         }
 
@@ -82,7 +82,7 @@
             width: 10px;
             height: 10px;
             display: block;
-            background: linear-gradient(45deg, #02216f, #2761c5);
+            background: linear-gradient(45deg, #8CC6EC, #92A8E5);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -129,94 +129,98 @@
                 margin: 20px;
             }
         }
+        .back{
+            background: linear-gradient(45deg, #8CC6EC, #92A8E5);
+        }
     </style>
 </head>
 
 <body>
     <div class="wrapper rounded bg-white">
-        <div class="h3">School Registration Form</div>
+        <div class="h3"><i class="fa-solid fa-user"></i> School Registration Form</div><hr>
         <div class="form">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>School Name :</label>
+                    <label>School Name :(name)</label>
                     <input type="text" class="form-control" placeholder="enter School Name" required>
-                </div>
+                </div>  
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>School email :</label>
+                    <label>School email :(email)</label>
                     <input type="email" class="form-control" placeholder="enter School email" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <label>Address</label>
+                    <label>Address(address)</label>
                     <textarea name="" id="" cols="10" rows="5" class="form-control" required placeholder="address">
                     </textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>City</label>
+                    <label>City (city)</label>
                     <input type="text" class="form-control" placeholder="Enter City" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>District</label>
+                    <label>District(district)</label>
                     <input type="text" class="form-control" placeholder="Enter District" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>State</label>
+                    <label>State(state)</label>
                     <input type="text" class="form-control" placeholder="Enter State" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Pincode</label>
-                    <input type="number" class="form-control" placeholder="Enter Pincode" required>
+                    <label>Pincode(pincode)</label>
+                    <input type="" class="form-control" placeholder="Enter Pincode" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Name of trust/Society running the school</label>
+                    <label>Name of trust/Society the school(trust)</label>
                     <input type="text" class="form-control" placeholder="Enter Name of trust/Society" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>GST Number of trust/Society</label>
-                    <input type="number" class="form-control" placeholder="Enter GST Number of trust/Society" required>
+                    <label>GST Number of trust/Society(gst)</label>
+                    <input type="" class="form-control" placeholder="Enter GST Number of trust/Society" required>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Email</label>
-                    <input type="email" class="form-control" required>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone Number</label>
-                    <input type="tel" class="form-control" required>
-                </div>
-            </div> -->
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>School Ph.no.</label>
-                    <input type="number" class="form-control" placeholder="STD Code" required>
+                    <label>Email(email)</label>
+                    <input type="email" class="form-control"  placeholder="Enter Email id" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label></label>
-                    <!-- <input type="number" class="form-control" placeholder="STD Code"required> -->
+                    <label>Phone Number(phonen)</label>
+                    <input type="tel" class="form-control"  placeholder="Enter Number"required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>School Ph.no.1(mobile1)</label>
+                    <input type="" class="form-control" placeholder="School Ph.no.1" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>School Ph.no.2(mobile2)</label>
+                    <input type="" class="form-control" placeholder="School Ph.no.2"required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3 mb">
                     <label for=""></label>
-                    <input type="number" class="form-control" placeholder="Phone-1" required>
+                    <input type="" class="form-control" placeholder="Phone-1" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label for=""></label>
-                    <input type="number" class="form-control" placeholder="Phone-2" required>
+                    <input type="" class="form-control" placeholder="Phone-2" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label></label>
-                    <input type="number" class="form-control" placeholder="Mobile-1" required>
+                    <input type="" class="form-control" placeholder="Mobile-1" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3 center-block">
                     <label></label>
-                    <input type="number" class="form-control" placeholder="Mobile-2" required>
+                    <input type="" class="form-control" placeholder="Mobile-2" required>
                 </div>
-                <!-- <div class="col-md-6 mt-md-0 mt-3">
+                <label for=""></label>
                     <label>Gender</label>
                     <div class="d-flex align-items-center mt-2">
                         <label class="option">
@@ -228,96 +232,96 @@
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Principal's Name</label>
+                    <label>Principal's Name(principal_name)</label>
                     <input type="text" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone-1</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone-1(principal_phone)</label>
+                    <input type="" class="form-control" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3 ml-3">
-                    <label>Principal's Email</label>
+                    <label>Principal's Email(principal_email)</label>
                     <input type="email" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone(phone1)</label>
+                    <input type="" class="form-control" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>GKO Incharge Teacher's Name :</label>
+                    <label>GKO Incharge Teacher's Name (gko_name):</label>
                     <input type="text" class="form-control" placeholder="Enter  Name" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label> email :</label>
+                    <label> email(emai6) :</label>
                     <input type="email" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone-2</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone-2 (phone33)</label>
+                    <input type="" class="form-control"  placeholder="Enter Number"required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>EO Incharge Teacher's Name :</label>
+                    <label>EO Incharge Teacher's Name (eo_name):</label>
                     <input type="text" class="form-control" placeholder="Enter  Name" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label> email :</label>
+                    <label> email :(email5)</label>
                     <input type="email" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone(phone4)</label>
+                    <input type="" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>SO Incharge Teacher's Name :</label>
+                    <label>SO Incharge Teacher's Name (so_name) :</label>
                     <input type="text" class="form-control" placeholder="Enter  Name" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label> email :</label>
+                    <label> email (email4):</label>
                     <input type="email" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone(phone44)</label>
+                    <input type="" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>CO Incharge Teacher's Name :</label>
+                    <label>CO Incharge Teacher's Name (co_name):</label>
                     <input type="text" class="form-control" placeholder="Enter  Name" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label> email :</label>
+                    <label> email (email3):</label>
                     <input type="email" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone phone(6)</label>
+                    <input type="" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>MO Incharge Teacher's Name :</label>
+                    <label>MO Incharge Teacher's Name (mo_name) :</label>
                     <input type="text" class="form-control" placeholder="Enter  Name" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label> email :</label>
+                    <label> email (email2):</label>
                     <input type="email" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Phone</label>
-                    <input type="number" class="form-control" required>
+                    <label>Phone (phone111)</label>
+                    <input type="" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
             <div>
@@ -329,19 +333,56 @@
                 <label>Select Date of Exam</label>
                 <input type="date" class="form-control" required>
             </div>
-            <div class="row">
+            <LAbel></LAbel>
+            <div>
+                <table class="table back">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sr no.</th>
+                        <th scope="col">Name Of the Teacher</th>
+                        <th scope="col">Teacher Number</th>
+                        <th scope="col">No.Of Student</th>
+                        <th scope="col">City</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mahendra Bhai</td>
+                        <td>99857...</td>
+                        <td>8</td>
+                        <td>Bhavanagar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Rahul Bhai</td>
+                        <td>94785....</td>
+                        <td>5</td>
+                        <td>Bhavanagar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Dansish Bhai</td>
+                        <td>98745....</td>
+                        <td>6</td>
+                        <td>Bhavanagar</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+            <div class="row">   
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Name of teacher(Class techer):</label>
+                    <label>Name of teacher(teacher_name):</label>
                     <input type="text" class="form-control" placeholder="Enter Class teacher" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Name of Student :</label>
+                    <label>Name of Student (name_student):</label>
                     <input type="text" class="form-control" placeholder="Enter Class teacher" required>
                 </div>
                 <div class="col-md-2 mt-md-0 mt-3">
                     <label for=""></label>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>STD</option>
+                        <option selected>STD(std)</option>
                         <option value="1">1st</option>
                         <option value="2">2nd</option>
                         <option value="3">3rd</option>
@@ -357,14 +398,15 @@
                     </select>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
-                    <label>Total Number's of Student :</label>
+                    <label>Total Number's of Student(no_student) :</label>
                     <input type="text" class="form-control" placeholder="Enter Number of Student" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Select Date of Exam</label>
+                    <label>Select Date of Exam(exam_date)</label>
                     <input type="date" class="form-control" required>
                 </div>
             </div>
+            <label for=""></label>
             <div class="col-md-12 mt-md-0 mt-3">
                 <h6>
                     -> Registration fee :
@@ -382,49 +424,51 @@
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Name of Bank Detail</label>
+                    <label>Name of Bank Detail(bank_name)</label>
                     <input type="text" class="form-control" placeholder="Enter Bank Name" required>
                 </div>  
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label>Place</label>
+                    <label>Place(place)</label>
                     <input type="text" class="form-control" placeholder="Enter Place" required>
                 </div>  
             </div>
+            <label for=""></label>
             <div class="row">
                 <div class="col-md-4 mt-md-0 mt-3">
-                <input type="number" class="form-control" placeholder="Demand Draft No." required>
+                <input type="" class="form-control" placeholder="Demand Draft No. (draft_no)" required>
             </div>
                 <div class="col-md-4 mt-md-0 mt-3">
-                <input type="date" class="form-control" placeholder="Date" required>
+                <input type="date" class="form-control" placeholder="Date (date1)" required>
             </div>
             <div class="col-md-4 mt-md-0 mt-3">
-                <input type="number" class="form-control" placeholder="Fees ₹" required>
+                <input type="" class="form-control" placeholder="Fees ₹"(fees) required>
             </div>
         </div>
+        <label for=""></label>
         <div class="row">
             <p> 
                 -> Demand On (Bank & Branch) :
             </p>
             <div class="col-md-6 mt-md-0 mt-3">
-                <label>Bank & Branch Name :</label>
-                <input type="text" class="form-control" placeholder="Enter Branch" required>
+                <input type="text" class="form-control" placeholder="Enter Branch (branch_name)" required>
             </div>  
         </div>
+        <label for=""></label>
         <div class="row">
             <p> 
                -> Transfer the Payment Online at https :
             </p>
             <div class="col-md-4 mt-md-0 mt-3">
-                <label>Date</label>
+                <label>Date (date_payment)</label>
                 <input type="date" class="form-control" placeholder="" required>
             </div> 
             <div class="col-md-4 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="For ₹" required>
+                <input type="" class="form-control" placeholder="Fees (Fees_pay)₹"required>
             </div> 
             <div class="col-md-4 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="Txn ID :" required>
+                <input type="" class="form-control" placeholder="Txn ID (Txn_id):" required>
             </div> 
         </div>
         <div class="row">
@@ -433,7 +477,7 @@
                 (Please fill the following detail and mention  school code)  :
              </p>
              <div>
-                <table class="table">
+                <table class="table back">
                     <thead>
                       <tr>
                         <th scope="col">Sr no.</th>
@@ -477,14 +521,15 @@
                 </div> 
                 <div class="col-md-4 mt-md-0 mt-3">
                     <label></label>
-                    <input type="number" class="form-control" placeholder="For ₹" required>
+                    <input type="" class="form-control" placeholder="For ₹" required>
                 </div> 
                 <div class="col-md-4 mt-md-0 mt-3">
                     <label></label>
-                    <input type="number" class="form-control" placeholder="Txn ID :" required>
+                    <input type="" class="form-control" placeholder="Txn ID :" required>
                 </div> 
             </div>
         </div>
+        <label for=""></label>
         <div class="row">
             <p> -> Schools may pay through Credit Card/Debite Card Powered by RUPAY/BHIM UPI/UPI : 
             </p>
@@ -494,30 +539,35 @@
             </div> 
             <div class="col-md-4 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="For ₹" required>
+                <input type="" class="form-control" placeholder="For ₹" required>
             </div> 
             <div class="col-md-4 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="Txn ID :" required>
+                <input type="" class="form-control" placeholder="Txn ID :" required>
             </div> 
         </div>
         <div class="row">
             <div class="col-md-4 mt-md-0 mt-3">
                 <label>UPI Address</label>
-                <input type="number" class="form-control" placeholder="@UPI id" required>
+                <input type="" class="form-control" placeholder="@UPI id" required>
             </div> 
             <div class="col-md-3 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="For ₹" required>
+                <input type="" class="form-control" placeholder="For ₹" required>
             </div> 
             <div class="col-md-5 mt-md-0 mt-3">
                 <label></label>
-                <input type="number" class="form-control" placeholder="QR Code (to Scan and pay)" required>
+                <input type="" class="form-control" placeholder="QR Code (to Scan and pay)" required>
             </div> 
         </div>
+        <label for=""></label>
         <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3">
             <p> -> Are you applying directly to through a co-orditinators form  : 
             </p>
+            <!-- <div class="row">
+            <link rel="stylesheet" href="../frontand6/images/animal.jpg">
+        </div> -->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Directly</label>
@@ -526,7 +576,9 @@
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                 <label class="form-check-label" for="inlineRadio2">Co-ordinator</label>
               </div>
+            </div>
         </div>
+        <label for=""></label>
         <div class="row">
             <div>
                 <div class="col-md-4 mt-md-0 mt-3">
@@ -535,7 +587,10 @@
                 </div> 
             </div>
         </div>
-        <div class="btn btn-primary mt-3">Submit</div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Submit</button>
+          </div>
+        </div>
         </div>
         </div>
         </div>
@@ -546,5 +601,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
 </body>
 </html>
