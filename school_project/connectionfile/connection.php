@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set("asia/kolkata");
-define("FILENAME",$_SERVER['DOCUMENT_ROOT'] . "/frontand6/error.log");
+define("FILENAME",$_SERVER['DOCUMENT_ROOT'] . "../connectionfile/error.log");
 define("ISDEBUG",true);
-define("SERVER","localhost:3308");
+define("SERVER","localhost:3306");
 define("USERNAME","root");
 define("PASSWORD","");
 define("DATABASE","school_register");
@@ -11,10 +11,10 @@ function LogError(PDOException $error,$FileName='connection.php') //user defined
 {
     $ErrorDateTime=date("D d-m-Y h:i:s A");
     $FileWhichHasError = $_SERVER['SCRIPT_FILENAME'];
-    $ErrorMessage="\n Error Code". $error->getCode() . " ErrorDetail " . $error->errorInfo[2].
+    $ErrorMessage="\n Error Code". $error->getCode() . " ErrorDetail " . $error->errorInfo[1].
     " error on occured at $ErrorDateTime in file $FileWhichHasError";
     //it writes content into file
-    file_put_contents(FILENAME,$ErrorMessage,FILE_APPEND|LOCK_EX);
+    // file_put_contents(FILENAME,$ErrorMessage,FILE_APPEND|LOCK_EX);
     if(ISDEBUG)
     {
         $_SESSION['error'] = $ErrorMessage;

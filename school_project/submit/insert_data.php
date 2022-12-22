@@ -1,0 +1,75 @@
+<?php
+session_start();
+require_once("../connectionfile/connection.php");
+extract($_POST);
+var_dump($_POST);
+try
+{
+    $sql = "insert into teacher (name, email, address, city, district, state, pincode, trust, gst, email1, phonen, mobile1, mobile2, mobile3, mobile4, gender, principal_name, principal_phone, principal_email, phone1, gko_name, email6, phone33, eo_name, email5, phone4, so_name, email4, phone44, co_name, email3, phone6, mo_name, email2, phone111, date, teacher_name, teacher_number, name_student, std, no_student, exam_date, bank_name, place, draft_no, date1, Fees, branch_name, date_payment, Fees_pay, date_pay, txn_no, date_upi, Fees_online, Txn, ordinator) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $statement=$db->prepare($sql);
+    $statement->bindparam(1,$name);
+    $statement->bindparam(2,$email);
+    $statement->bindparam(3,$address);
+    $statement->bindparam(4,$city);
+    $statement->bindparam(5,$district);
+    $statement->bindparam(6,$state);
+    $statement->bindparam(7,$pincode);
+    $statement->bindparam(8,$trust);
+    $statement->bindparam(9,$gst);
+    $statement->bindparam(10,$email1);
+    $statement->bindparam(11,$phonen);
+    $statement->bindparam(12,$mobile1);
+    $statement->bindparam(13,$mobile2);
+    $statement->bindparam(14,$mobile3);
+    $statement->bindparam(15,$mobile4);
+    $statement->bindparam(16,$gender);
+    $statement->bindparam(17,$principal_name);
+    $statement->bindparam(18,$principal_phone);
+    $statement->bindparam(19,$principal_email);
+    $statement->bindparam(20,$phone1);
+    $statement->bindparam(21,$gko_name);
+    $statement->bindparam(22,$email6);
+    $statement->bindparam(23,$phone33);
+    $statement->bindparam(24,$eo_name);
+    $statement->bindparam(25,$email5);
+    $statement->bindparam(26,$phone4);
+    $statement->bindparam(27,$so_name);
+    $statement->bindparam(28,$email4);
+    $statement->bindparam(29,$phone44);
+    $statement->bindparam(30,$co_name);
+    $statement->bindparam(31,$email3);
+    $statement->bindparam(32,$phone6);
+    $statement->bindparam(33,$mo_name);
+    $statement->bindparam(34,$email2);
+    $statement->bindparam(35,$phone111);
+    $statement->bindparam(36,$date);
+    $statement->bindparam(37,$teacher_name);
+    $statement->bindparam(38,$teacher_number);
+    $statement->bindparam(39,$name_student);
+    $statement->bindparam(40,$std);
+    $statement->bindparam(41,$no_student);
+    $statement->bindparam(42,$exam_date);
+    $statement->bindparam(43,$bank_name);
+    $statement->bindparam(44,$place);
+    $statement->bindparam(45,$draft_no);
+    $statement->bindparam(46,$date1);
+    $statement->bindparam(47,$Fees);
+    $statement->bindparam(48,$branch_name);
+    $statement->bindparam(49,$date_payment);
+    $statement->bindparam(50,$Fees_pay);
+    $statement->bindparam(51,$date_pay);
+    $statement->bindparam(52,$txn_no);
+    $statement->bindparam(53,$date_upi);
+    $statement->bindparam(54,$Fees_online);
+    $statement->bindparam(55,$Txn);
+    $statement->bindparam(56,$ordinator);
+    // $statement->bindparam(35,$email2);
+    $statement->execute();
+    $_SESSION['message'] = "Branch inserted successfully ";
+}
+catch(PDOException $error)
+{
+    LogError($error,__FILE__);
+}
+// header("location:../form/newregister.php");
+?>
