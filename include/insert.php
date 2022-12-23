@@ -1,0 +1,68 @@
+<?php
+session_start();
+require_once("../include/connection.php");
+extract($_POST);
+try
+{
+    $sql="insert into techer (name,email,address,city,district,state,pincode,trust,gst,email1,phonen,mobile1,mobile2,mobile3,mobile4,gender,principal_name,principal_phone,principal_email,gko_name,email6,phone33,eo_name,email5,phone4,so_name,email4,phone44,co_name,email3,phone6,mo_name,email2,phone111,date,teacher_name,name_student,std,no_student,exam_date,bank_name,place,draft_no,date1,Fees,branch_name,date_payment,Fees_pay,Txn_id,date_pay,fee_pay,txn_no,date_upi,Fees_online,Txn,upiid,fees_upi,qrcode,inlineRadioOptions,ordinator) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?
+    )";
+    $statement=$db->prepare($sql);
+    $statement->bindparam(1,$name);
+    $statement->bindparam(2,$city);
+    $statement->bindparam(3,$pincode);
+    $statement->bindparam(4,$remarks);
+    $statement->bindparam(5,$email);
+    $statement->bindparam(6,$password);
+    $statement->execute();
+    $_SESSION['message'] = "Form inserted successfully ";
+}
+catch(PDOException $error)
+{
+    LogError($error,__FILE__);
+}
+header("location:../form.php");
+?>

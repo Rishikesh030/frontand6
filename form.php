@@ -1,9 +1,3 @@
-<?php
-
-session_start();
-require_once("../connectionfile/connection.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,8 +137,7 @@ require_once("../connectionfile/connection.php");
 <body>
     <div class="wrapper rounded bg-white">
         <div class="h3"><i class="fa-solid fa-user"></i> School Registration Form</div><hr>
-        <form  class="form" action="../submit/insert_data.php" method="POST">
-            
+        <form  class="form" action="../submit/insert2_data.php" method="POST">
                     <div class="row">
                         <div class="col-md-6 mt-md-0 mt-3">
                             <label for="name">School Name :</label>
@@ -196,8 +189,9 @@ require_once("../connectionfile/connection.php");
                             <input type="email"name="email1" id="email1"class="form-control"  placeholder="Enter Email id" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phonen">Phone Number :</label>
-                            <input type="tel"name="phonen" id="phonen" class="form-control"  placeholder="Enter Number"required>
+                            <label for="phone1">Phone Number :</label>
+                            <input type="tel"name="phone1" id="phone1
+                            " class="form-control"  placeholder="Enter Number"required>
                         </div>
                     </div>
                     <div class="row">
@@ -218,23 +212,23 @@ require_once("../connectionfile/connection.php");
                             <input type="" name="mobile4" id="mobile4" class="form-control" placeholder="Phone-2" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label></label>
-                            <input type="" class="form-control" placeholder="Mobile-1" required>
+                            <label for="mobile5"></label>
+                            <input type="" name="mobile5" id="mobile5" class="form-control" placeholder="Mobile-1" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3 center-block">
-                            <label></label>
-                            <input type="" class="form-control" placeholder="Mobile-2" required>
+                            <label for="mobile6"></label>
+                            <input type="" name="mobile6" id="mobile6" class="form-control" placeholder="Mobile-2" required>
                         </div>
                         <label for=""></label>
                             <label for="gender">Gender :</label>
                             <div class="d-flex align-items-center mt-2">
                             <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <input class="form-check-input" type="radio" name="gender" id="gender" value="option1">
+                        <label class="form-check-label" for="gender">Male</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                        <input class="form-check-input" type="radio" name="gender" id="gender" value="option2">
+                        <label class="form-check-label" for="gender">Female</label>
                     </div>     
                             </div>
                         </div>
@@ -262,12 +256,12 @@ require_once("../connectionfile/connection.php");
                             <input type="text" name="gko_name"id="gko_name" class="form-control" placeholder="Enter  Name" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="email6"> email :</label>
-                            <input type="email"  name="email6" id="email6"class="form-control" placeholder="Enter  Email" required>
+                            <label for="email5"> email :</label>
+                            <input type="email"  name="email5" id="email5"class="form-control" placeholder="Enter  Email" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phone33">Phone :</label>
-                            <input type="" name="phone33" id="phone33"class="form-control"  placeholder="Enter Number"required>
+                            <label for="phone2">Phone :</label>
+                            <input type="" name="phone2" id="phone2"class="form-control"  placeholder="Enter Number"required>
                         </div>
                     </div>
                     <div class="row">
@@ -276,12 +270,12 @@ require_once("../connectionfile/connection.php");
                             <input type="text" name="eo_name" id="eo_name" class="form-control" placeholder="Enter  Name" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="email5"> email :</label>
-                            <input type="email" name="email5" id="email5" class="form-control" placeholder="Enter  Email" required>
+                            <label for="email6"> email :</label>
+                            <input type="email" name="email6" id="email6" class="form-control" placeholder="Enter  Email" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phone4">Phone :</label>
-                            <input type=""  name="phone4" id="phone4"class="form-control" placeholder="Enter Number" required>
+                            <label for="phone3">Phone :</label>
+                            <input type=""  name="phone3" id="phone3"class="form-control" placeholder="Enter Number" required>
                         </div>
                     </div>
                     <div class="row">
@@ -290,12 +284,12 @@ require_once("../connectionfile/connection.php");
                             <input type="text"  name="so_name" id="so_name" class="form-control" placeholder="Enter  Name" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="email4"> email :</label>
-                            <input type="email" name="email4" id="email4" class="form-control" placeholder="Enter  Email" required>
+                            <label for="email7"> email :</label>
+                            <input type="email" name="email7" id="email7" class="form-control" placeholder="Enter  Email" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phone44">Phone :</label>
-                            <input type="" name="phone44" id="phone44" class="form-control" placeholder="Enter Number" required>
+                            <label for="phone4">Phone :</label>
+                            <input type="" name="phone4" id="phone4" class="form-control" placeholder="Enter Number" required>
                         </div>
                     </div>
                     <div class="row">
@@ -304,12 +298,12 @@ require_once("../connectionfile/connection.php");
                             <input type="text" name="co_name" id="co_name" class="form-control" placeholder="Enter  Name" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="email3"> email :</label>
-                            <input type="email" name="email3" id="email3" class="form-control" placeholder="Enter  Email" required>
+                            <label for="email8"> email :</label>
+                            <input type="email" name="email8" id="email8" class="form-control" placeholder="Enter  Email" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phone6">Phone :</label>
-                            <input type="" name="phone6" id="phone6" class="form-control" placeholder="Enter Number" required>
+                            <label for="phone5">Phone :</label>
+                            <input type="" name="phone5" id="phone5" class="form-control" placeholder="Enter Number" required>
                         </div>
                     </div>
                     <div class="row">
@@ -318,12 +312,12 @@ require_once("../connectionfile/connection.php");
                             <input type="text" name="mo_name" id="mo_name" class="form-control" placeholder="Enter  Name" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="email2"> email :</label>
-                            <input type="email" name="email2" id="email2" class="form-control" placeholder="Enter  Email" required>
+                            <label for="email9"> email :</label>
+                            <input type="email" name="email9" id="email9" class="form-control" placeholder="Enter  Email" required>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <label for="phone111">Phone :</label>
-                            <input type="" name="phone111" id="phone111" class="form-control" placeholder="Enter Number" required>
+                            <label for="phone6">Phone :</label>
+                            <input type="" name="phone6" id="phone6" class="form-control" placeholder="Enter Number" required>
                         </div>
                     </div>
                     <div>
@@ -336,42 +330,6 @@ require_once("../connectionfile/connection.php");
                         <input type="date" name="date" id="date" class="form-control" required>
                     </div>
                     <LAbel></LAbel>
-                    <!-- <div>
-                        <table class="table back">
-                            <thead>
-                            <tr>
-                                <th scope="col">Sr no.</th>
-                                <th scope="col">Name Of the Teacher</th>
-                                <th scope="col">Teacher Number</th>
-                                <th scope="col">No.Of Student</th>
-                                <th scope="col">City</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mahendra Bhai</td>
-                                <td>99857...</td>
-                                <td>8</td>
-                                <td>Bhavanagar</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Rahul Bhai</td>
-                                <td>94785....</td>
-                                <td>5</td>
-                                <td>Bhavanagar</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Dinesh Bhai</td>
-                                <td>98745....</td>
-                                <td>6</td>
-                                <td>Bhavanagar</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div> -->
                     <div class="row">   
                         <div class="col-md-6 mt-md-0 mt-3">
                             <label for="teacher_name">Name of teacher :</label>
@@ -472,8 +430,8 @@ require_once("../connectionfile/connection.php");
                         <input type="" name="Fees_pay" id="Fees_pay" class="form-control" placeholder="Fees ₹ "required>
                     </div> 
                     <div class="col-md-4 mt-md-0 mt-3">
-                        <label for="Txn_id"></label>
-                        <input type="" name="Txn_id" id="Txn_id" class="form-control" placeholder="Txn ID " required>
+                        <label for="txn_id"></label>
+                        <input type="" name="txn_id" id="txn_id" class="form-control" placeholder="Txn ID"required>
                     </div> 
                 </div>
                 <div class="row">
@@ -510,8 +468,8 @@ require_once("../connectionfile/connection.php");
                         <input type="" name="Fees_online" id="Fees_online" class="form-control" placeholder="Fees_online ₹" required>
                     </div> 
                     <div class="col-md-4 mt-md-0 mt-3">
-                        <label for="Txn"></label>
-                        <input type="" name="Txn" id="Txn" class="form-control" placeholder="Txn ID " required>
+                        <label for="txn"></label>
+                        <input type="" name="txn" id="txn" class="form-control" placeholder="txn ID " required>
                     </div> 
                 </div>
                 <div class="row">
@@ -528,18 +486,18 @@ require_once("../connectionfile/connection.php");
                         <input type="" name="qrcode" id="qrcode" class="form-control" placeholder="QR Code (to Scan and pay)" required>
                     </div> 
                 </div>
-                <label for=""></label>
+                <label for="inlineRadioOptions"></label>
                 <div class="row">
                     <div class="col-md-12 mt-md-0 mt-3">
                     <p> -> Are you applying directly to through a co-orditinators form  : 
                     </p>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="option1">
                         <label class="form-check-label" for="inlineRadio1">Directly</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Co-ordinator</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="option2">
+                        <label class="form-check-label" for="inlineRadioOptions">Co-ordinator</label>
                     </div>                
                     </div>
                     <label for=""></label>
@@ -553,7 +511,7 @@ require_once("../connectionfile/connection.php");
                 </div>
                 <div class=" col-md-5 justify-content-md-end">
                 <label for="formFile" class="form-label">Principal Signature upload:</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="form-control" name="formFile" type="file" id="formFile">
                </div>
                 <label for=""></label>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -564,7 +522,6 @@ require_once("../connectionfile/connection.php");
                 </div>
                 </div>
                 </div>
-
         </form>
     </div>
     </div>
@@ -574,6 +531,7 @@ require_once("../connectionfile/connection.php");
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/20994dd270.js"crossorigin="anonymous"></script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </body>
 </html>
