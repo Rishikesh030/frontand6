@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYANMANJARI VIDYAPITH</title>
-     <!-- CSS only  -->
+    <!-- CSS only  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         /* Importing fonts from Google */
@@ -305,12 +305,12 @@
                     <input type="number" name="phone6" id="phone6" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
-             <div class="row">
+            <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label for="co_name">CO Incharge Teacher's Name :</label>
                     <input type="text" name="co_name" id="co_name" class="form-control" placeholder="Enter  Name" required>
                 </div>
-                 <div class="col-md-6 mt-md-0 mt-3">
+                <div class="col-md-6 mt-md-0 mt-3">
                     <label for="email8"> email :</label>
                     <input type="email" name="email8" id="email8" class="form-control" placeholder="Enter  Email" required>
                 </div>
@@ -334,7 +334,7 @@
                 </div>
             </div>
 
-             <div>
+            <div>
                 <h6>
                     ->International Gk olympiad IO/SO/MO/CO
                 </h6>
@@ -449,7 +449,7 @@
                     <input type="number" name="txn_id" id="txn_id" class="form-control" placeholder=" Enter Txn ID" required>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="row">
                 <p>
                     -> School may send payment diseetly through 'NEFT/RTGS/TRANSFER'
                     (Please fill the following detail and mention school code) :
@@ -462,11 +462,11 @@
                     </div>
                     <div class="col-md-4 mt-md-0 mt-3">
                         <label for="fee_pay"></label>
-                        <input type="" name="fee_pay" id="fee_pay" class="form-control" placeholder="For ₹" required>
+                        <input type="number" name="fee_pay" id="fee_pay" class="form-control" placeholder="For ₹" required>
                     </div>
                     <div class="col-md-4 mt-md-0 mt-3">
                         <label for="txn_no"></label>
-                        <input type="" name="txn_no" id="txn_no" class="form-control" placeholder="Txn ID " required>
+                        <input type="number" name="txn_no" id="txn_no" class="form-control" placeholder="Txn ID " required>
                     </div>
                 </div>
             </div>
@@ -479,14 +479,15 @@
                     <input type="date" name="date_upi" id="date_upi" class="form-control" placeholder="" required>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
-                    <label for="Fees_online"></label>
-                    <input type="" name="Fees_online" id="Fees_online" class="form-control" placeholder="Fees_online ₹" required>
+                    <label for="fees_online"></label>
+                    <input type="number" name="fees_online" id="fees_online" class="form-control" placeholder="Fees_online ₹" required>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
                     <label for="txn"></label>
-                    <input type="" name="txn" id="txn" class="form-control" placeholder="txn ID " required>
+                    <input type="number" name="txn" id="txn" class="form-control" placeholder="txn ID " required>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-4 mt-md-0 mt-3">
                     <label for="upiid">UPI Address :</label>
@@ -507,34 +508,33 @@
                     <p> -> Are you applying directly to through a co-orditinators form :
                     </p>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Directly</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioOptions1" value="option1">
+                        <label class="form-check-label" for="inlineRadioOptions1">Directly</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="option2">
-                        <label class="form-check-label" for="inlineRadioOptions">Co-ordinator</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadioOptions2" value="option2">
+                        <label class="form-check-label" for="inlineRadioOptions2">Co-ordinator</label>
                     </div>
                 </div>
                 <label for=""></label>
             </div>
-            <div class="row justify-content-end">
-                <div class="col-md-4 mt-md-0 mt-3 justify-content-lg-start">
-                    <label for="ordinator"></label>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label for="ordinator1"></label>
                     <p>-> Name of the Co-ordinator</p>
-                    <input type="text" name="ordinator" id="ordinator" class="form-control" placeholder="Enter co-ordinator Name" required>
+                    <input type="text" name="ordinator1" id="ordinator1" class="form-control" placeholder="Enter co-ordinator Name" required>
                 </div>
-                <div class="col-md-4 mt-md-0 mt-3">
-                    <label for="ordinator"></label>
-                    <p>-> Name of the Co-ordinator</p>
-                    <img src="markus-winkler-Q6uqw_Hjye8-unsplash.jpg" alt="" class="img-fluid">
+                <div class="col-md-4 mt-10">
+                    <label for=""></label>
+                    <p>-> Scan Qr code</p>
+                    <img src="../frontand6/images/qr code1.png" alt="" class="img-fluid">
                 </div>
             </div>
-          
-             <div class=" col-md-5 justify-content-md-end">
+            <div class=" col-md-5 justify-content-md-end">
                 <label for="formFile" class="form-label">Principal Signature upload:</label>
                 <input class="form-control" name="formFile" type="file" id="formFile">
             </div>
-            <label for=""></label> -->
+            <label for=""></label>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary me-md-2" type="submit">Submit</button>
             </div>
@@ -547,7 +547,7 @@
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <!-- // JavaScript Bundle with Popper // -->
+    <!-- // JavaScript Bundle with Popper // -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

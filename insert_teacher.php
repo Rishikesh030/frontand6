@@ -5,7 +5,7 @@ extract($_POST);
 // var_dump($_POST);    
 try
 {
-    $sql = "insert into teacher (name,email,address,city,district,state,pincode,trust,gst,email1,phone1,phone2,mobile1,mobile2,mobile3,mobile4,mobile5,mobile6,gender,principal_name,principal_phone,principal_email,gko_name,email5,phone3,eo_name,email6,phone4,so_name,email7,phone6,co_name,email8,phone7,mo_name,email9,phone8,date,teacher_name,name_student,std,no_student,exam_date,bank_name,place,draft_no,date1,fees,branch_name,date_payment,fees_pay,txn_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";    
+    $sql = "insert into teacher (name,email,address,city,district,state,pincode,trust,gst,email1,phone1,phone2,mobile1,mobile2,mobile3,mobile4,mobile5,mobile6,gender,principal_name,principal_phone,principal_email,gko_name,email5,phone3,eo_name,email6,phone4,so_name,email7,phone6,co_name,email8,phone7,mo_name,email9,phone8,date,teacher_name,name_student,std,no_student,exam_date,bank_name,place,draft_no,date1,fees,branch_name,date_payment,fees_pay,txn_id,date_pay,fee_pay,txn_no,date_upi,fees_online,txn,upiid,fees_upi,qrcode,inlineRadioOptions1,ordinator1,formFile) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";    
 $statement=$db->prepare($sql);
 $statement->bindparam(1,$name);
 $statement->bindparam(2,$email);
@@ -59,6 +59,18 @@ $statement->bindParam(49,$branch_name);
 $statement->bindParam(50,$date_payment);
 $statement->bindParam(51,$fees_pay);
 $statement->bindParam(52,$txn_id);
+$statement->bindParam(53,$date_pay);
+$statement->bindParam(54,$fee_pay);
+$statement->bindParam(55,$txn_no);
+$statement->bindParam(56,$date_upi);
+$statement->bindParam(57,$fees_online);
+$statement->bindParam(58,$txn);
+$statement->bindParam(59,$upiid);
+$statement->bindParam(60,$fees_upi);
+$statement->bindParam(61,$qrcode);
+$statement->bindParam(62,$inlineRadioOptions1);
+$statement->bindParam(63,$ordinator1);
+$statement->bindParam(64,$formFile);
 $statement->execute();
 echo "Data inserted successfully";
 }
