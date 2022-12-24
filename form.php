@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYANMANJARI VIDYAPITH</title>
-    <!-- CSS only -->
+     <!-- CSS only  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         /* Importing fonts from Google */
@@ -142,7 +142,7 @@
     <div class="wrapper rounded bg-white">
         <div class="h3"><i class="fa-solid fa-user"></i> School Registration Form</div>
         <hr>
-        <form class="form" action="insert_teacher.php" method="POST">
+        <form class="form" action="insert_teacher.php" method="post">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label for="name">School Name :</label>
@@ -300,23 +300,23 @@
                     <label for="email7"> email :</label>
                     <input type="email" name="email7" id="email7" class="form-control" placeholder="Enter  Email" required>
                 </div>
-                <!-- <div class="col-md-6 mt-md-0 mt-3">
-                    <label for="phone5">Phone :</label>
-                    <input type="number" name="phone5" id="phone5" class="form-control" placeholder="Enter Number" required>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label for="phone6">Phone :</label>
+                    <input type="number" name="phone6" id="phone6" class="form-control" placeholder="Enter Number" required>
                 </div>
-            </div> -->
-            <!-- <div class="row">
+            </div>
+             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label for="co_name">CO Incharge Teacher's Name :</label>
                     <input type="text" name="co_name" id="co_name" class="form-control" placeholder="Enter  Name" required>
-                </div> -->
-                <!-- <div class="col-md-6 mt-md-0 mt-3">
+                </div>
+                 <div class="col-md-6 mt-md-0 mt-3">
                     <label for="email8"> email :</label>
                     <input type="email" name="email8" id="email8" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label for="phone6">Phone :</label>
-                    <input type="number" name="phone6" id="phone6" class="form-control" placeholder="Enter Number" required>
+                    <label for="phone7">Phone :</label>
+                    <input type="number" name="phone7" id="phone7" class="form-control" placeholder="Enter Number" required>
                 </div>
             </div>
             <div class="row">
@@ -329,22 +329,21 @@
                     <input type="email" name="email9" id="email9" class="form-control" placeholder="Enter  Email" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <label for="phone7">Phone :</label>
-                    <input type="number" name="phone7" id="phone7" class="form-control" placeholder="Enter Number" required>
+                    <label for="phone8">Phone :</label>
+                    <input type="number" name="phone8" id="phone8" class="form-control" placeholder="Enter Number" required>
                 </div>
-            </div> -->
+            </div>
 
-
-
-            <!-- <div>
+             <div>
                 <h6>
                     ->International Gk olympiad IO/SO/MO/CO
                 </h6>
             </div>
             <div class="col-md-6 mt-md-0 mt-3">
-                <label for="date">Select Date of Exam :</label>
-                <input type="date" name="date" id="date" class="form-control" required>
+                <label for="date1">Select Date of Exam :</label>
+                <input type="date" name="date1" id="date1" class="form-control" required>
             </div>
+
             <LAbel></LAbel>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
@@ -419,8 +418,8 @@
                     <input type="date" name="date1" id="date1" class="form-control" placeholder="Date" required>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
-                    <label for="Fees"></label>
-                    <input type="" name="Fees" id="Fees" class="form-control" placeholder="Fees ₹" required>
+                    <label for="fees"></label>
+                    <input type="number" name="fees" id="fees" class="form-control" placeholder="Enter Fees ₹" required>
                 </div>
             </div>
             <div class="row">
@@ -442,15 +441,15 @@
                     <input type="date" name="date_payment" id="date_payment" class="form-control" placeholder="" required>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
-                    <label for="Fees_pay"></label>
-                    <input type="" name="Fees_pay" id="Fees_pay" class="form-control" placeholder="Fees ₹ " required>
+                    <label for="fees_pay"></label>
+                    <input type="number" name="fees_pay" id="fees_pay" class="form-control" placeholder="Fees mode ₹ " required>
                 </div>
                 <div class="col-md-4 mt-md-0 mt-3">
                     <label for="txn_id"></label>
-                    <input type="" name="txn_id" id="txn_id" class="form-control" placeholder="Txn ID" required>
+                    <input type="number" name="txn_id" id="txn_id" class="form-control" placeholder=" Enter Txn ID" required>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <p>
                     -> School may send payment diseetly through 'NEFT/RTGS/TRANSFER'
                     (Please fill the following detail and mention school code) :
@@ -518,19 +517,24 @@
                 </div>
                 <label for=""></label>
             </div>
-            <div class="row">
-                <div class="col-md-4 mt-md-0 mt-3">
+            <div class="row justify-content-end">
+                <div class="col-md-4 mt-md-0 mt-3 justify-content-lg-start">
                     <label for="ordinator"></label>
                     <p>-> Name of the Co-ordinator</p>
                     <input type="text" name="ordinator" id="ordinator" class="form-control" placeholder="Enter co-ordinator Name" required>
                 </div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <label for="ordinator"></label>
+                    <p>-> Name of the Co-ordinator</p>
+                    <img src="markus-winkler-Q6uqw_Hjye8-unsplash.jpg" alt="" class="img-fluid">
+                </div>
             </div>
-            -->     
-            <div class=" col-md-5 justify-content-md-end">
+          
+             <div class=" col-md-5 justify-content-md-end">
                 <label for="formFile" class="form-label">Principal Signature upload:</label>
                 <input class="form-control" name="formFile" type="file" id="formFile">
-            </div> -->
-            <label for=""></label>
+            </div>
+            <label for=""></label> -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary me-md-2" type="submit">Submit</button>
             </div>
@@ -543,7 +547,7 @@
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    // JavaScript Bundle with Popper //
+     <!-- // JavaScript Bundle with Popper // -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

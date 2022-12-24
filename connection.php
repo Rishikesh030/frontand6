@@ -10,7 +10,7 @@ define("DATABASE","school_register");
 function LogError(PDOException $error,$FileName='connection.php') //user defined functions
 {
     $ErrorDateTime=date("D d-m-Y h:i:s A");
-    $FileWhichHasError = $_SERVER['SCRIPT_FILENAME'];
+    $FileWhichHasError = $_SERVER['SCRIPT_FILENAME' ];
     $ErrorMessage="\n Error Code". $error->getCode() . " ErrorDetail " . $error->errorInfo[1].
     " error on occured at $ErrorDateTime in file $FileWhichHasError";
     //it writes content into file

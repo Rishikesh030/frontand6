@@ -5,7 +5,7 @@ extract($_POST);
 // var_dump($_POST);    
 try
 {
-    $sql = "insert into teacher (name,email,address,city,district,state,pincode,trust,gst,email1,phone1,phone2,mobile1,mobile2,mobile3,mobile4,mobile5,mobile6,gender,principal_name,principal_phone,principal_email,gko_name,email5,phone3,eo_name,email6,phone4,so_name,email7) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $sql = "insert into teacher (name,email,address,city,district,state,pincode,trust,gst,email1,phone1,phone2,mobile1,mobile2,mobile3,mobile4,mobile5,mobile6,gender,principal_name,principal_phone,principal_email,gko_name,email5,phone3,eo_name,email6,phone4,so_name,email7,phone6,co_name,email8,phone7,mo_name,email9,phone8,date,teacher_name,name_student,std,no_student,exam_date,bank_name,place,draft_no,date1,fees,branch_name,date_payment,fees_pay,txn_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";    
 $statement=$db->prepare($sql);
 $statement->bindparam(1,$name);
 $statement->bindparam(2,$email);
@@ -27,21 +27,43 @@ $statement->bindparam(17,$mobile5);
 $statement->bindparam(18,$mobile6);
 $statement->bindparam(19,$gender);
 $statement->bindparam(20,$principal_name);
-$statement->bindParam(21,$principal_phone);
-$statement->bindParam(22,$principal_email);
-$statement->bindParam(23,$gko_name);
-$statement->bindParam(24,$email5);
-$statement->bindParam(25,$phone3);
-$statement->bindParam(26,$eo_name);
-$statement->bindParam(27,$email6);
-$statement->bindParam(28,$phone4);
-$statement->bindParam(29,$so_name);
-$statement->bindParam(30,$email7);
+$statement->bindparam(21,$principal_phone);
+$statement->bindparam(22,$principal_email);
+$statement->bindparam(23,$gko_name);
+$statement->bindparam(24,$email5);
+$statement->bindparam(25,$phone3);
+$statement->bindparam(26,$eo_name);
+$statement->bindparam(27,$email6);
+$statement->bindparam(28,$phone4);
+$statement->bindparam(29,$so_name);
+$statement->bindparam(30,$email7);
+$statement->bindparam(31,$phone6);
+$statement->bindParam(32,$co_name);
+$statement->bindParam(33,$email8);
+$statement->bindParam(34,$phone7);
+$statement->bindParam(35,$mo_name);
+$statement->bindParam(36,$email9);
+$statement->bindParam(37,$phone8);
+$statement->bindParam(38,$date);
+$statement->bindParam(39,$teacher_name);
+$statement->bindParam(40,$name_student);
+$statement->bindParam(41,$std);
+$statement->bindParam(42,$no_student);
+$statement->bindParam(43,$exam_date);
+$statement->bindParam(44,$bank_name);
+$statement->bindParam(45,$place);
+$statement->bindParam(46,$draft_no);
+$statement->bindParam(47,$date1);
+$statement->bindParam(48,$fees);
+$statement->bindParam(49,$branch_name);
+$statement->bindParam(50,$date_payment);
+$statement->bindParam(51,$fees_pay);
+$statement->bindParam(52,$txn_id);
 $statement->execute();
 echo "Data inserted successfully";
 }
 catch (PDOException $error)
 {
-        LogError($error);
+    LogError($error);
 }
 ?>
