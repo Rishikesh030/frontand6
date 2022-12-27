@@ -1,0 +1,19 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 26 Dec 2022 19:04:55 at https://codervent.com/rocker/demo/vertical/table-datatable.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://codervent.com/rocker/demo/vertical/table-datatable.html -O1 "C:\My Web Sites\Admine_pannel" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:11:24	Error: 	Exit requested by shell or user
+19:11:24	Warning: 	File not added due to mirror cancel: https://codervent.com/rocker/demo/vertical/assets/plugins/bs-stepper/css/bs-stepper.css
+19:11:58	Warning: 	Retry after error -4 (Incorrect length (1495891 Bytes, 2000580 expected)) at link https://codervent.com/rocker/demo/vertical/assets/images/gallery/21.png (from https://codervent.com/rocker/demo/vertical/component-carousels.html)
+19:11:58	Warning: 	Retry after error -4 (Incorrect length (479891 Bytes, 3632002 expected)) at link https://codervent.com/rocker/demo/vertical/assets/images/gallery/24.png (from https://codervent.com/rocker/demo/vertical/component-carousels.html)
+19:11:59	Warning: 	File not added due to mirror cancel: https://codervent.com/rocker/demo/vertical/assets/images/gallery/21.png
+19:11:59	Error: 	"mirror stopped by user" (-1) at link https://codervent.com/rocker/demo/vertical/assets/images/gallery/21.png (from https://codervent.com/rocker/demo/vertical/component-carousels.html)
+19:11:59	Warning: 	File not added due to mirror cancel: https://codervent.com/rocker/demo/vertical/assets/images/gallery/24.png
+19:11:59	Error: 	"mirror stopped by user" (-1) at link https://codervent.com/rocker/demo/vertical/assets/images/gallery/24.png (from https://codervent.com/rocker/demo/vertical/component-carousels.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 7 minutes 4 seconds : 731 links scanned, 726 files written (64712376 bytes overall) [60972680 bytes received at 143803 bytes/sec], 7882546 bytes transferred using HTTP compression in 125 files, ratio 24%, 12.3 requests per connection
+(3 errors, 5 warnings, 0 messages)

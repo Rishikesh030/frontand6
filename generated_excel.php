@@ -568,7 +568,7 @@
                 .appendTo('#form .col-md-6:eq(0)');
         });
     </script> -->
-    </form>    
+    </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- // JavaScript Bundle with Popper // -->
@@ -576,7 +576,7 @@
     <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
 </body>
 
 </html>
