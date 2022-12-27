@@ -1,3 +1,7 @@
+<?php
+require_once("connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,22 +86,90 @@
                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 76px;" aria-label="Salary: activate to sort column ascending">formFile</th>
                 </tr>
             </thead>
-            <!--                   
-                        <tr>
-                            <th rowspan="1" colspan="1">Name</th>
-                            <th rowspan="1" colspan="1">Position</th>
-                            <th rowspan="1" colspan="1">Office</th>
-                            <th rowspan="1" colspan="1">Age</th>
-                            <th rowspan="1" colspan="1">Start date</th>
-                            <th rowspan="1" colspan="1">Salary</th>
-                        </tr> -->
-            </tfoot>
-        </table>
-        <!-- <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 entries</div> -->
-        <!-- <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="previous" tabindex="-1" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="0" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="1" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">4</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">5</a><a class="paginate_button " aria-controls="example" data-dt-idx="5" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="next" tabindex="0" id="example_next">Next</a></div> -->
-    </div>
-    </div>
-    </div>
+            <tbody>
+                <?php
+                $sql = "Select * from teacher ";
+                $stat = $db->prepare($sql);
+                $stat->setFetchMode(PDO::FETCH_ASSOC);
+                $stat->execute();
+                $table = $stat->fetchAll();
+                foreach ($table as $row) {
+
+                ?>
+                <tr>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['address']; ?></td>
+                    <td><?php echo $row['city']; ?></td>
+                    <td><?php echo $row['district']; ?></td>
+                    <td><?php echo $row['state']; ?></td>
+                    <td><?php echo $row['pincode']; ?></td>
+                    <td><?php echo $row['trust']; ?></td>
+                    <td><?php echo $row['gst']; ?></td>
+                    <td><?php echo $row['email1']; ?></td>
+                    <td><?php echo $row['phone1']; ?></td>
+                    <td><?php echo $row['phone2']; ?></td>
+                    <td><?php echo $row['mobile1']; ?></td>
+                    <td><?php echo $row['mobile2']; ?></td>
+                    <td><?php echo $row['mobile3']; ?></td>
+                    <td><?php echo $row['mobile4']; ?></td>
+                    <td><?php echo $row['mobile5']; ?></td>
+                    <td><?php echo $row['mobile6']; ?></td>
+                    <td><?php echo $row['gender']; ?></td>
+                    <td><?php echo $row['principal_name']; ?></td>
+                    <td><?php echo $row['principal_phone']; ?></td>
+                    <td><?php echo $row['principal_email']; ?></td>
+                    <td><?php echo $row['gko_name']; ?></td>
+                    <td><?php echo $row['email5']; ?></td>
+                    <td><?php echo $row['phone3']; ?></td>
+                    <td><?php echo $row['eo_name']; ?></td>
+                    <td><?php echo $row['email6']; ?></td>
+                    <td><?php echo $row['phone4']; ?></td>
+                    <td><?php echo $row['so_name']; ?></td>
+                    <td><?php echo $row['email7']; ?></td>
+                    <td><?php echo $row['phone6']; ?></td>
+                    <td><?php echo $row['co_name']; ?></td>
+                    <td><?php echo $row['email8']; ?></td>
+                    <td><?php echo $row['phone7']; ?></td>
+                    <td><?php echo $row['mo_name']; ?></td>
+                    <td><?php echo $row['email9']; ?></td>
+                    <td><?php echo $row['phone8']; ?></td>
+                    <td><?php echo $row['date']; ?></td>
+                    <td><?php echo $row['teacher_name']; ?></td>
+                    <td><?php echo $row['name_student']; ?></td>
+                    <td><?php echo $row['std']; ?></td>
+                    <td><?php echo $row['no_student']; ?></td>
+                    <td><?php echo $row['exam_date']; ?></td>
+                    <td><?php echo $row['bank_name']; ?></td>
+                    <td><?php echo $row['place']; ?></td>
+                    <td><?php echo $row['draft_no']; ?></td>
+                    <td><?php echo $row['date1']; ?></td>
+                    <td><?php echo $row['fees']; ?></td>
+                    <td><?php echo $row['branch_name']; ?></td>
+                    <td><?php echo $row['date_payment']; ?></td>
+                    <td><?php echo $row['fees_pay']; ?></td>
+                    <td><?php echo $row['txn_id']; ?></td>
+                    <td><?php echo $row['date_pay']; ?></td>
+                    <td><?php echo $row['fee_pay']; ?></td>
+                    <td><?php echo $row['txn_no']; ?></td>
+                    <td><?php echo $row['date_upi']; ?></td>
+                    <td><?php echo $row['fees_online']; ?></td>
+                    <td><?php echo $row['txn']; ?></td>
+                    <td><?php echo $row['upiid']; ?></td>
+                    <td><?php echo $row['fees_upi']; ?></td>
+                    <td><?php echo $row['qrcode']; ?></td>
+                    <td><?php echo $row['inlineRadioOptions1']; ?></td>
+                    <td><?php echo $row['ordinator1']; ?></td>
+                    <td><?php echo $row['formFile']; ?></td>
+                </tr>
+                <?php
+                }
+                    ?>
+            </tbody>
+            <tfoot></tfoot>
+        </table>    
+        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 entries</div>
+        <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="previous" tabindex="-1" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="0" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="1" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">4</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">5</a><a class="paginate_button " aria-controls="example" data-dt-idx="5" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="next" tabindex="0" id="example_next">Next</a></div>
     </div>
     <script src="../frontand6/phpb20/jq/jquery/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
